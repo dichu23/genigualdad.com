@@ -1,0 +1,34 @@
+// Importar cualquier dependencia necesaria aquí
+// Por ejemplo, si quisieras usar nodemailer para enviar emails:
+// const nodemailer = require('nodemailer');
+
+import { Resend } from "resend";
+
+const resend = new Resend("re_123456789");
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method not allowed" });
+  }
+
+  const { nombre, email, telefono, mensaje } = req.body;
+
+  const { data, error } = await resend.emails.send({
+    from: "Acme <onboarding@resend.dev>",
+    to: ["delivered@resend.dev"],
+    subject: "Hello World",
+    html: "<strong>It works!</strong>",
+  });
+
+  if (error) {
+    return res.status(500).json({
+      message: "Error al enviar el mensaje",
+      error: error.message,
+    });
+  }
+
+  return res.status(200).json({
+    message: "Mensaje recibido correctamente",
+    data: { nombre, email, telefono, mensaje },
+  });
+}
