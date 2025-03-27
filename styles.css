@@ -465,3 +465,18 @@ footer {
   font-size: 2rem;
   margin-bottom: 10px;
 }
+
+.message-container {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+  min-height: 10px;
+}
+
+.message-container .success {
+  color: #2dd4bf;
+}
+
+.message-container .error {
+  color: #ff0000;
+}

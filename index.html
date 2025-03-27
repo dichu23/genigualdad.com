@@ -199,6 +199,7 @@
                     <div class="form-group">
                         <textarea id="mensaje" placeholder="Mensaje" required></textarea>
                     </div>
+                    <div class="message-container"></div>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -285,15 +286,19 @@
                 const data = await response.json();
 
                 if (response.ok) {
-                    alert(`Gracias ${nombre} por contactarnos. Te responderemos a la brevedad.`);
+                    document.querySelector('.message-container').innerHTML = `<p class="success">Gracias ${nombre} por contactarnos. Te responderemos a la brevedad.</p>`;
                     contactForm.reset();
                 } else {
-                    alert('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
+                    document.querySelector('.message-container').innerHTML = `<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>`;
                 }
             } catch (error) {
                 console.error('Error:', error);
-                alert('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
+                document.querySelector('.message-container').innerHTML = `<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>`;
             }
+
+            setTimeout(() => {
+                document.querySelector('.message-container').innerHTML = '';
+            }, 5000);
         });
 
         // Smooth scrolling for anchor links
