@@ -14,10 +14,15 @@ export default async function handler(req, res) {
   const { nombre, email, telefono, mensaje } = req.body;
 
   const { data, error } = await resend.emails.send({
-    from: "Acme <onboarding@resend.dev>",
-    to: ["delivered@resend.dev"],
-    subject: "Hello World",
-    html: "<strong>It works!</strong>",
+    from: "Gen Igualdad <contacto@genigualdad.com>",
+    to: ["marianotellaeche@gmail.com"],
+    subject: "Contacto de " + nombre,
+    html: `
+      <p>Nombre: ${nombre}</p>
+      <p>Email: ${email}</p>
+      <p>Teléfono: ${telefono}</p>
+      <p>Mensaje: ${mensaje}</p>
+    `,
   });
 
   if (error) {
