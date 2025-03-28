@@ -22,6 +22,11 @@ h2 {
   text-align: center;
 }
 
+.h2 .sobre-nosotros-title {
+  text-align: left;
+
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,7 +47,7 @@ header {
 
 .logo {
   width: 80px;
-  height: 80px;
+  height: auto;
 }
 
 nav ul {
@@ -125,11 +130,26 @@ nav ul li a:hover {
   flex: 1.5;
 }
 
+.sobre-nosotros-columns {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sobre-nosotros-text {
+  flex: 1;
+}
+
+.sobre-nosotros-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
 .mision-box {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 10px;
-  margin-top: 30px;
 }
 
 .mision-box h3 {
@@ -369,6 +389,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+
   h1,
   h2 {
     font-size: 2rem;
@@ -404,6 +425,15 @@ footer {
 
   .mobile-menu-btn {
     display: block;
+  }
+
+  .sobre-nosotros-columns {
+    flex-direction: column;
+  }
+
+  .sobre-nosotros-text,
+  .mision-box {
+    flex: none;
   }
 }
 
