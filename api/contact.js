@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   const { nombre, email, telefono, mensaje } = req.body;
 
-  const { data, error } = await resend.emails.send({
+  const { _data, error } = await resend.emails.send({
     from: "Gen Igualdad <contacto@genigualdad.com>",
     to: ["larod63@gmail.com"],
     subject: "Contacto desde la web de Gen Igualdad",
