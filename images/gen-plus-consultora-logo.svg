@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 534 363" role="img" aria-labelledby="title desc">
+  <title id="title">GEN+ Consultora en Género</title>
+  <desc id="desc">Logo de GEN+ con símbolo infinito y texto Consultora en Género.</desc>
+  <defs>
+    <linearGradient id="loop" x1="70" y1="115" x2="455" y2="115" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b54d9"/>
+      <stop offset="0.34" stop-color="#56c7d7"/>
+      <stop offset="0.64" stop-color="#1e376f"/>
+      <stop offset="1" stop-color="#a7ee55"/>
+    </linearGradient>
+    <linearGradient id="plus" x1="250" y1="166" x2="250" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39d7d1"/>
+      <stop offset="1" stop-color="#2b5ba8"/>
+    </linearGradient>
+  </defs>
+  <rect width="534" height="363" fill="#fff"/>
+  <path d="M91 117C132 44 195 43 267 116c70 70 127 73 173 6 21-31 8-63-25-70-36-8-75 18-122 75-66 80-136 91-196 30-31-32-35-62-6-40Z" fill="none" stroke="url(#loop)" stroke-width="42" stroke-linecap="round" opacity=".96"/>
+  <path d="M91 117C132 44 195 43 267 116c70 70 127 73 173 6" fill="none" stroke="#20336f" stroke-width="42" stroke-linecap="round" opacity=".22"/>
+  <path d="M250 166h44v30h-44zM257 152h30v58h-30z" fill="url(#plus)" rx="7"/>
+  <text x="32" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="47" font-weight="900" fill="#2b2e34">GEN+</text>
+  <line x1="150" y1="276" x2="150" y2="323" stroke="#555" stroke-width="3"/>
+  <text x="169" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="300" fill="#444">Consultora en Género</text>
+</svg>
