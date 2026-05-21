@@ -1,328 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gen+Igualdad | Consultora de Género 2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GEN+ Igualdad: consultora de género para empresas e instituciones. Estrategias DEI, protocolos de igualdad, prevención de violencia y capacitación.">
+  <title>GEN+ Igualdad | Consultora de Género</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <img src="/images/logo.png  " alt="GEN+ Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <button class="close-menu">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul>
-            <li><a href="#inicio" class="mobile-link">Inicio</a></li>
-            <li><a href="#sobre-nosotros" class="mobile-link">Sobre Nosotros</a></li>
-            <li><a href="#valores" class="mobile-link">Valores</a></li>
-            <li><a href="#equipo" class="mobile-link">Equipo</a></li>
-            <li><a href="#servicios" class="mobile-link">Servicios</a></li>
-            <li><a href="#contacto" class="mobile-link">Contacto</a></li>
-        </ul>
-    </div>
-
-    <!-- Hero Section -->
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="GEN+ Igualdad"><img src="/images/gen-plus-consultora-logo.svg" alt="GEN+ Consultora en Género"></a>
+    <nav class="nav">
+      <a href="#empresas">Empresas</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#equipo">Equipo</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+  </header>
+  <div class="mobile-menu">
+    <button class="close-menu" type="button" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
+    <a href="#empresas">Empresas</a><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#equipo">Equipo</a><a href="#contacto">Contacto</a>
+  </div>
+  <main>
     <section class="hero" id="inicio">
-        <div class="hero-content">
-                <h1>Gen+Igualdad <br>Consultora de Género 2</h1>
-            <p>Diseño e implementación de estrategias para la igualdad de género</p>
-            <hr style="border: none; height: 1px; background-color: #ccc; margin: 20px 0;">
-        </div>
-        <div class="hero-image">
-            <img src="/images/genmas-1.jpg" alt="Consultora en Género">
-        </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Diversidad · Equidad · Inclusión</p>
+        <h1>Estrategias de igualdad para organizaciones que quieren avanzar</h1>
+        <p class="lead">Acompañamos a empresas e instituciones en la integración de la perspectiva de género en su cultura, sus procesos de Recursos Humanos y sus políticas internas.</p>
+        <div class="hero-actions"><a class="button primary" href="#contacto">Solicitar asesoramiento</a><a class="button ghost" href="#servicios">Ver servicios</a></div>
+        <div class="trust-strip"><span>Empresas</span><span>Instituciones</span><span>Equipos de RR.HH.</span><span>Organizaciones sociales</span></div>
+      </div>
+      <figure class="hero-image"><img src="/images/genmas-1.jpg" alt="Consultoría en género e igualdad"></figure>
     </section>
-
-    <!-- Sobre Nosotros -->
-    <section class="sobre-nosotros" id="sobre-nosotros">
-        <div class="sobre-nosotros-container">
-            <div class="sobre-nosotros-image">
-                <img src="/images/genmas-2.jpg" alt="Sobre Nosotros">
-            </div>
-            <div class="sobre-nosotros-content">
-                <h2 class="sobre-nosotros-title">Sobre Nosotros</h2>
-                <div class="sobre-nosotros-columns">
-                    <div class="sobre-nosotros-text">
-                        <p>En GEN+, nos especializamos en proporcionar asesoramiento y orientación para fomentar la igualdad de
-                            género en empresas y organizaciones.</p>
-                        <p>Nuestro equipo experto trabaja para identificar y superar las barreras, promoviendo entornos
-                            inclusivos y equitativos para todos los empleados.</p>
-                    </div>
-                    <div class="sobre-nosotros-text">
-                        <h3>NUESTRA MISIÓN</h3>
-                        <p>Colaborar en la construcción de un mundo más igualitario, promoviendo la equidad y el
-                            respeto por la diversidad en todos los ámbitos de la sociedad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="summary" id="empresas">
+      <div class="summary-heading"><p class="eyebrow">Proyecto para empresas</p><h2>La agenda DEI mejora la cultura laboral y los resultados del negocio</h2></div>
+      <div class="summary-text"><p>Las organizaciones más exitosas incorporan la Diversidad, Equidad e Inclusión en cada aspecto de su cultura laboral. Este enfoque genera equipos más diversos, creativos y comprometidos.</p><p>Para lograrlo, es clave revisar los procesos de Recursos Humanos: reclutamiento, selección, capacitación, evaluación, desarrollo y liderazgo.</p></div>
     </section>
-
-     <!-- Servicios -->
-     <section class="servicios" id="servicios">
-        <h2>Servicios</h2>
-        <div class="servicios-container">
-            <div class="servicio">
-                <img src="/images/servicios-1.jpg" alt="Elaboración de Protocolos de Igualdad">
-                <div class="servicio-info">
-                    <h3>ELABORACIÓN DE PROTOCOLOS DE IGUALDAD</h3>
-                    <p>Este servicio se enfoca en la creación de programas, procedimientos y prevención que promuevan la
-                        igualdad de género en el lugar de trabajo, garantizando un ambiente inclusivo y equitativo para
-                        todos los empleados; dirigido a pequeñas, medianas y grandes empresas.</p>
-                </div>
-            </div>
-            <div class="servicio">
-                <img src="/images/servicios-2.jpg" alt="Prevención de Violencia de Género">
-                <div class="servicio-info">
-                    <h3>PREVENCIÓN DE VIOLENCIA DE GÉNERO</h3>
-                    <p>Desarrollamos estrategias y materiales formativos para prevenir la violencia de género en el
-                        ámbito laboral y comunitario. Elaboramos y llevamos a cabo talleres y cursos de prevención y
-                        sensibilización de violencia basada en el género. Realizamos asesoramiento y acompañamiento
-                        jurídico a las víctimas.</p>
-                </div>
-            </div>
-            <div class="servicio">
-                <img src="/images/servicios-3.jpg" alt="Capacitación en Género">
-                <div class="servicio-info">
-                    <h3>CAPACITACIÓN EN GÉNERO</h3>
-                    <p>Capacitación en Género ofrece una amplia gama de recursos educativos que incluyen seminarios,
-                        talleres y materiales didácticos, todos diseñados para promover una mayor conciencia y acción en
-                        torno a la igualdad de género. Este servicio es ideal para empresas, instituciones educativas y
-                        organizaciones que buscan implementar políticas de género efectivas y sostenibles.</p>
-                </div>
-            </div>
-        </div>
+    <section class="about">
+      <div class="about-image"><img src="/images/genmas-2.jpg" alt="GEN+ Igualdad"></div>
+      <div class="about-copy"><p class="eyebrow">Sobre nosotros</p><h2>Consultoría especializada en género, igualdad y transformación cultural</h2><p>En GEN+, brindamos asesoramiento y orientación para fomentar la igualdad de género en empresas y organizaciones.</p><p>Nuestro equipo identifica barreras, diseña acciones concretas y promueve entornos inclusivos, equitativos y respetuosos.</p><div class="mission"><h3>Nuestra misión</h3><p>Colaborar en la construcción de un mundo más igualitario, promoviendo la equidad y el respeto por la diversidad en todos los ámbitos de la sociedad.</p></div></div>
     </section>
-
-    <!-- Valores -->
-    <section class="valores" id="valores">
-        <h2>Nuestros valores</h2>
-        <div class="valores-container">
-            <div class="valor">
-                <div class="infinity">∞</div>
-                <h3>equidad</h3>
-            </div>
-            <div class="valor">
-                <div class="infinity">∞</div>
-                <h3>inclusión</h3>
-            </div>
-            <div class="valor">
-                <div class="infinity">∞</div>
-                <h3>compromiso</h3>
-            </div>
-            <div class="valor">
-                <div class="infinity">∞</div>
-                <h3>innovación</h3>
-            </div>
-            <div class="valor">
-                <div class="infinity">∞</div>
-                <h3>transparencia</h3>
-            </div>
-        </div>
+    <section class="services" id="servicios">
+      <div class="section-title"><p class="eyebrow">Servicios</p><h2>Soluciones para empresas, instituciones y equipos</h2></div>
+      <div class="service-grid">
+        <article><img src="/images/servicios-1.jpg" alt="Protocolos de igualdad"><div><h3>Protocolos de igualdad</h3><p>Diseño de programas, procedimientos y herramientas para promover igualdad de género y prevenir situaciones de discriminación o acoso.</p></div></article>
+        <article><img src="/images/servicios-2.jpg" alt="Prevención de violencia de género"><div><h3>Prevención de violencia de género</h3><p>Talleres, materiales formativos y estrategias de sensibilización para ámbitos laborales, educativos y comunitarios.</p></div></article>
+        <article><img src="/images/servicios-3.jpg" alt="Capacitación en género"><div><h3>Capacitación en género</h3><p>Seminarios y capacitaciones orientadas a construir conciencia, incorporar buenas prácticas y fortalecer liderazgos inclusivos.</p></div></article>
+      </div>
     </section>
-
-    <!-- Equipo -->
-    <section class="equipo" id="equipo">
-        <h2>Nuestro equipo</h2>
-        <div class="equipo-container">
-            <div class="miembro">
-                <img src="/images/equipo1.jpg" alt="Laura Fabiana Rodriguez">
-                <div class="miembro-info">
-                    <h3>Laura Fabiana Rodriguez</h3>
-                    <h4>Coordinadora de proyectos</h4>
-                    <p>Magister en "Género, Sociedad y Políticas", de FLACSO, con amplia experiencia en programas y
-                        estadísticas de género. Especialista en el diseño e implementación de capacitaciones enfocadas
-                        en la prevención y sensibilización sobre la violencia de género, dirigidas a docentes,
-                        profesionales que trabajan con víctimas, estudiantes, organizaciones del tercer sector y
-                        empresas.</p>
-                </div>
-            </div>
-            <div class="miembro">
-                <img src="/images/equipo2.jpg" alt="María Rosa Diez de Ulzurrún">
-                <div class="miembro-info">
-                    <h3>María Rosa Diez de Ulzurrún</h3>
-                    <h4>Directora Ejecutiva</h4>
-                    <p>Socióloga, Especialista en Planificación y Gestión de Políticas Sociales, y Magister en Políticas
-                        Sociales por la Universidad de Buenos Aires (UBA). Cuenta con amplia experiencia en la
-                        planificación y ejecución de talleres de sensibilización y prevención de la violencia de género,
-                        dirigidos a organizaciones gubernamentales y no gubernamentales.</p>
-                </div>
-            </div>
-            <div class="miembro">
-                <img src="/images/equipo3.jpg" alt="José Ignacio Sampedro">
-                <div class="miembro-info">
-                    <h3>José Ignacio Sampedro</h3>
-                    <h4>Director de asuntos jurídicos</h4>
-                    <p>Abogado experto en la incorporación de la perspectiva de género en el diseño, implementación y
-                        evaluación de políticas públicas y proyectos legales. Se desempeña como coordinador de proyectos
-                        socioculturales en diversas Comunidades Autónomas de España, liderando iniciativas que promueven
-                        la inclusión, la igualdad de oportunidades y el desarrollo comunitario.</p>
-                </div>
-            </div>
-        </div>
+    <section class="method" id="metodo">
+      <div class="section-title compact"><p class="eyebrow">Estrategia DEI</p><h2>Intervenciones claras, medibles y adaptadas a cada organización</h2></div>
+      <div class="method-grid">
+        <article><span class="method-icon">🧭</span><h3>Diagnóstico y objetivos</h3><p>Identificamos el punto de partida, definimos grupos prioritarios y trazamos una hoja de ruta realista para acompañar el cambio cultural.</p></article>
+        <article><span class="method-icon">🤝</span><h3>Procesos de RR.HH.</h3><p>Revisamos reclutamiento, selección, capacitación, evaluación y desarrollo para que las oportunidades sean más equitativas y transparentes.</p></article>
+        <article><span class="method-icon">⚖️</span><h3>Brechas y corresponsabilidad</h3><p>Analizamos salarios, beneficios, licencias, flexibilidad y tareas de cuidado para diseñar medidas que promuevan equidad real.</p></article>
+        <article><span class="method-icon">💡</span><h3>Sesgos y liderazgo</h3><p>Sensibilizamos sobre sesgos inconscientes e incorporamos indicadores DEI para fortalecer liderazgos inclusivos y sostenibles.</p></article>
+      </div>
     </section>
-
-   
-
-    <!-- Contacto -->
-    <section class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-container">
-            <div class="contacto-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="E-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="telefono" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <div class="message-container"></div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div class="contacto-info">
-                <div class="contacto-info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Ubicaciones</h4>
-                        <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
-                        <p>Santiago de Compostela, Galicia, España</p>
-                    </div>
-                </div>
-                <div class="contacto-info-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Teléfonos</h4>
-                        <p>+54-911-6229-6664 | +54-911-6059-5326</p>
-                        <p>+34-698-1-87971</p>
-                    </div>
-                </div>
-                <div class="contacto-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>larod63@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="corporate-section">
+      <div class="section-title compact"><p class="eyebrow">Para empresas e instituciones</p><h2>Una propuesta pensada para convertir obligaciones y desafíos en valor organizacional</h2></div>
+      <div class="corporate-grid">
+        <article><h3>Gestión con cumplimiento</h3><p>Acompañamos la elaboración de planes, diagnósticos, protocolos y acciones que ayudan a ordenar la gestión interna y prevenir riesgos reputacionales.</p></article>
+        <article><h3>Cultura laboral más sana</h3><p>Trabajamos sobre clima, pertenencia, comunicación y prevención de violencias para crear espacios seguros y respetuosos.</p></article>
+        <article><h3>Talento y liderazgo</h3><p>Diseñamos capacitaciones y herramientas para potenciar nuevos liderazgos, reducir brechas y mejorar la toma de decisiones.</p></article>
+        <article><h3>Implementación flexible</h3><p>Ofrecemos talleres presenciales y online, asesoramiento por etapas y propuestas adaptadas al tamaño, sector y madurez de cada organización.</p></article>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="divider"></div>
-        <p>&copy; 2025 GEN+ Consultora en Género. Todos los derechos reservados.</p>
-    </footer>
-
-    <script>
-        // Mobile menu functionality
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const closeMenuBtn = document.querySelector('.close-menu');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
-        });
-
-        closeMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
-        });
-
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const nombre = document.getElementById('nombre').value;
-            const email = document.getElementById('email').value;
-            const telefono = document.getElementById('telefono').value;
-            const mensaje = document.getElementById('mensaje').value;
-
-            try {
-                const response = await fetch('/api/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        nombre,
-                        email,
-                        telefono,
-                        mensaje
-                    })
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    document.querySelector('.message-container').innerHTML = `<p class="success">Gracias ${nombre} por contactarnos. Te responderemos a la brevedad.</p>`;
-                    contactForm.reset();
-                } else {
-                    document.querySelector('.message-container').innerHTML = `<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>`;
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                document.querySelector('.message-container').innerHTML = `<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>`;
-            }
-
-            setTimeout(() => {
-                document.querySelector('.message-container').innerHTML = '';
-            }, 5000);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <section class="impact"><div><p class="eyebrow">Impacto organizacional</p><h2>Por qué incorporar la agenda DEI</h2></div><div class="impact-list"><p>Mejora el clima laboral y el sentido de pertenencia.</p><p>Atrae y retiene talento.</p><p>Reduce incidencias de violencia laboral.</p><p>Refuerza la reputación y la imagen de marca.</p><p>Aporta valor a la Responsabilidad Social Corporativa.</p><p>Favorece ideas más creativas e innovadoras.</p></div></section>
+    <section class="specialties"><div class="section-title compact"><p class="eyebrow">Áreas de trabajo</p><h2>Perspectiva de género aplicada a la gestión</h2></div><div class="specialty-grid"><div>Auditorías retributivas, registros salariales y valoración de puestos.</div><div>Diagnósticos con encuestas, entrevistas y grupos de discusión.</div><div>Formación en igualdad para gestión empresarial y emprendimientos.</div><div>Diseño y gestión de talleres, seminarios y proyectos.</div><div>Prevención del acoso, violencia de género y discriminación.</div><div>Diversidad sexual, igualdad de oportunidades y desarrollo institucional.</div></div></section>
+    <section class="team" id="equipo"><div class="section-title"><p class="eyebrow">Nuestro equipo</p><h2>Experiencia profesional con mirada interdisciplinaria</h2></div><div class="team-grid"><article><img src="/images/equipo1.jpg" alt="Laura Fabiana Rodriguez"><div><h3>Laura Fabiana Rodriguez</h3><h4>Coordinadora de proyectos</h4><p>Magister en Género, Sociedad y Políticas por FLACSO. Especialista en programas, estadísticas y capacitaciones para la prevención y sensibilización sobre violencia de género.</p></div></article><article><img src="/images/equipo2.jpg" alt="María Rosa Diez de Ulzurrún"><div><h3>María Rosa Diez de Ulzurrún</h3><h4>Directora ejecutiva</h4><p>Socióloga, especialista en Planificación y Gestión de Políticas Sociales, y Magister en Políticas Sociales por la Universidad de Buenos Aires.</p></div></article><article><img src="/images/equipo3.jpg" alt="José Ignacio Sampedro"><div><h3>José Ignacio Sampedro</h3><h4>Director de asuntos jurídicos</h4><p>Abogado experto en incorporación de la perspectiva de género en políticas públicas, proyectos legales e iniciativas de inclusión e igualdad de oportunidades.</p></div></article></div></section>
+    <section class="contact" id="contacto"><div class="contact-copy"><p class="eyebrow">Contacto</p><h2>Conversemos sobre las necesidades de tu organización</h2><p>Coordinamos reuniones para analizar el punto de partida y diseñar una propuesta clara, viable y adaptada al equipo.</p><div class="contact-info"><p><strong>Argentina:</strong> Ciudad Autónoma de Buenos Aires · +54 911 6229-6664 · +54 911 6059-5326</p><p><strong>España:</strong> Santiago de Compostela, Galicia · +34 698 187 971</p><p><strong>Email:</strong> genigualdad@gmail.com</p></div></div><form class="contact-form" id="contactForm"><input id="nombre" type="text" placeholder="Nombre" required><input id="email" type="email" placeholder="E-mail" required><input id="telefono" type="tel" placeholder="Teléfono"><textarea id="mensaje" placeholder="Mensaje" required></textarea><div class="message-container"></div><button type="submit">Enviar consulta</button></form></section>
+  </main>
+  <footer><strong>GEN+ Igualdad</strong><span>Consultora en Género · Igualdad · Inclusión · Impacto</span></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-button');const closeMenuButton=document.querySelector('.close-menu');const mobileMenu=document.querySelector('.mobile-menu');menuButton.addEventListener('click',()=>mobileMenu.classList.add('active'));closeMenuButton.addEventListener('click',()=>mobileMenu.classList.remove('active'));document.querySelectorAll('.mobile-menu a').forEach(link=>{link.addEventListener('click',()=>mobileMenu.classList.remove('active'))});const form=document.getElementById('contactForm');const messageContainer=document.querySelector('.message-container');form.addEventListener('submit',async event=>{event.preventDefault();const payload={nombre:document.getElementById('nombre').value,email:document.getElementById('email').value,telefono:document.getElementById('telefono').value,mensaje:document.getElementById('mensaje').value};try{const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(response.ok){messageContainer.innerHTML=`<p class="success">Gracias ${payload.nombre}. Te responderemos a la brevedad.</p>`;form.reset()}else{messageContainer.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>'}}catch(error){messageContainer.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>'}setTimeout(()=>{messageContainer.innerHTML=''},5000)});
+  </script>
 </body>
-
 </html>
