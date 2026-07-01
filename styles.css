@@ -199,7 +199,7 @@ footer ul a:hover{color:var(--teal)}
 
 @media (max-width:1120px){
   .pillars,.institutions-strip+.gallery,.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .why-grid,.team-grid,.stats-grid,.corporate-grid,.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why-grid,.team-grid,.stats-grid,.corporate-grid,.process-grid,.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .timeline{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}
   .timeline::before{display:none}
   .gallery{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:150px}
@@ -212,7 +212,7 @@ footer ul a:hover{color:var(--teal)}
   .hero,.summary,.about,.impact,.contact,.flagship{grid-template-columns:1fr}
   .hero{min-height:auto}
   .hero-image img,.about-image img{height:auto;max-height:520px}
-  .impact-list,.why-grid,.team-grid,.stats-grid,.corporate-grid,.process-grid,.impact-columns,.pillars{grid-template-columns:1fr}
+  .impact-list,.why-grid,.team-grid,.stats-grid,.corporate-grid,.process-grid,.impact-columns,.pillars,.blog-grid{grid-template-columns:1fr}
   .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gallery a:first-child{grid-column:span 2}
   .footer-grid{grid-template-columns:1fr}
