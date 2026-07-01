@@ -88,12 +88,9 @@ h3{color:var(--purple-900);font-size:1.2rem;line-height:1.28}
 .method{background:var(--paper)}
 .pillars{display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px}
 .pillar{background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
-.pillar summary{list-style:none;cursor:pointer;padding:26px;display:flex;align-items:flex-start;gap:14px;font-weight:800}
-.pillar summary::-webkit-details-marker{display:none}
-.pillar summary .pillar-num{color:var(--teal);font-size:.85rem;font-weight:900;letter-spacing:1px}
-.pillar summary .pillar-title{color:var(--purple-900);font-size:1.15rem;display:block;margin-top:6px}
-.pillar summary .pillar-toggle{margin-left:auto;color:var(--teal);font-size:1.3rem;flex:0 0 auto}
-.pillar[open] summary .pillar-toggle{transform:rotate(45deg)}
+.pillar-head{padding:26px;font-weight:800}
+.pillar-head .pillar-num{color:var(--teal);font-size:.85rem;font-weight:900;letter-spacing:1px}
+.pillar-head .pillar-title{color:var(--purple-900);font-size:1.15rem;display:block;margin-top:6px}
 .pillar-body{padding:0 26px 26px}
 .pillar-body ul{list-style:none;display:grid;gap:10px}
 .pillar-body li{color:var(--muted);font-size:.95rem;padding-left:20px;position:relative}
@@ -190,8 +187,8 @@ h3{color:var(--purple-900);font-size:1.2rem;line-height:1.28}
 /* Footer */
 footer{background:var(--purple-950);color:var(--white);padding:56px max(6vw,28px) 32px}
 .footer-grid{display:grid;gap:40px;grid-template-columns:1.2fr 1fr 1fr 1fr;margin-bottom:40px}
-.footer-brand .logo-chip{background:var(--white);border-radius:8px;padding:14px 18px;display:inline-block;margin-bottom:16px}
-.footer-brand .logo-chip img{height:46px}
+.footer-brand .logo-chip{background:var(--white);border-radius:12px;padding:18px 26px;display:inline-block;margin-bottom:20px;box-shadow:var(--shadow)}
+.footer-brand .logo-chip img{height:76px;width:auto}
 .footer-brand p{color:rgba(255,255,255,.65);font-size:.9rem;max-width:280px}
 footer h4{color:var(--teal);font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
 footer ul{list-style:none;display:grid;gap:10px}
