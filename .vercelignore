@@ -1,0 +1,8 @@
+.git
+build.py
+pages_main.py
+pages_services.py
+pages_recursos.py
+__pycache__
+README.md
+.gitignore

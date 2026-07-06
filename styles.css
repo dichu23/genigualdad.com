@@ -140,7 +140,7 @@ h3{color:var(--purple-900);font-size:1.2rem;line-height:1.28}
 .corporate-grid h3{margin-bottom:12px}
 
 /* Trayectoria: timeline */
-.timeline-section{background:linear-gradient(180deg,var(--white) 0%,rgba(26,16,51,.92) 130px,rgba(26,16,51,.95) 100%),url(/images/territorio-cimdip.jpg) center 15%/cover no-repeat}
+.timeline-section{background:linear-gradient(180deg,var(--white) 0%,rgba(26,16,51,.92) 130px,rgba(26,16,51,.95) 100%),url(/img/territorio-cimdip.webp) center 15%/cover no-repeat}
 .timeline-section .section-title h2,.timeline-section .section-title p.eyebrow{color:var(--white)}
 .timeline-section .section-title p.eyebrow{color:var(--teal)}
 .timeline{display:grid;gap:0;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px;position:relative}
@@ -182,7 +182,7 @@ h3{color:var(--purple-900);font-size:1.2rem;line-height:1.28}
 .gallery-item:hover img{transform:scale(1.05)}
 
 /* Proceso */
-.process{background:linear-gradient(180deg,var(--white) 0%,rgba(26,16,51,.85) 140px,rgba(26,16,51,.9) 100%),url(/images/territorio-amanecer.jpg) center 20%/cover no-repeat}
+.process{background:linear-gradient(180deg,var(--white) 0%,rgba(26,16,51,.85) 140px,rgba(26,16,51,.9) 100%),url(/img/territorio-amanecer.webp) center 20%/cover no-repeat}
 .process .section-title h2{color:var(--white)}
 .process>p{color:rgba(255,255,255,.85)}
 .process-grid{display:grid;gap:18px;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:36px}
@@ -275,4 +275,165 @@ footer ul a:hover{color:var(--teal)}
   .contact-locations{grid-template-columns:1fr}
   .team-grid article,.pillar-body,.corporate-grid article{padding:0}
   .gallery{grid-template-columns:1fr;grid-auto-rows:220px}
+}
+
+/* ============ v2: componentes nuevos ============ */
+.icon{width:22px;height:22px;flex:0 0 auto}
+.why-grid .icon{width:30px;height:30px;color:var(--teal);margin-bottom:14px}
+.card-link{align-items:center;color:var(--teal-dark);display:inline-flex;font-size:.9rem;font-weight:900;gap:8px;margin-top:14px}
+.card-link .icon{width:17px;height:17px;transition:transform .25s ease}
+a:hover .card-link .icon,.card-link:hover .icon{transform:translateX(4px)}
+
+/* WhatsApp flotante */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform .25s ease,box-shadow .25s ease}
+.wa-float .icon{width:30px;height:30px}
+.wa-float:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 18px 40px rgba(37,211,102,.55)}
+
+/* Hero de páginas internas */
+.page-hero{background:linear-gradient(135deg,var(--purple-950),var(--purple-800));padding:96px max(6vw,28px)}
+.page-hero.compact{padding:72px max(6vw,28px)}
+.page-hero-copy{max-width:860px}
+.page-hero h1{font-size:clamp(2.2rem,4.6vw,3.8rem)}
+.page-hero .lead{margin-top:6px}
+.breadcrumb{color:rgba(255,255,255,.65);font-size:.84rem;font-weight:700;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.breadcrumb a{color:rgba(255,255,255,.8)}
+.breadcrumb a:hover{color:var(--teal)}
+.breadcrumb span[aria-current]{color:var(--teal)}
+
+/* Tarjetas por país (home) */
+.country-band{background:var(--white)}
+.country-cards{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.country-card{background:linear-gradient(160deg,var(--lavender),#f2f0ff);border:1px solid var(--line);border-radius:8px;padding:34px;display:flex;flex-direction:column;border-top:4px solid transparent;background-image:linear-gradient(160deg,var(--lavender),#f2f0ff),var(--grad-brand);background-origin:border-box;background-clip:padding-box,border-box;transition:transform .35s cubic-bezier(.16,.84,.44,1),box-shadow .35s ease}
+.country-card:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(45,27,78,.18)}
+.country-card h3{font-size:1.45rem;margin-bottom:12px}
+.country-card p{flex:1}
+.country-card .eyebrow{margin-bottom:10px}
+
+/* Tarjetas de servicio (home) */
+.service-cards{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.service-card{background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:200px 1fr;transition:transform .35s cubic-bezier(.16,.84,.44,1),box-shadow .35s ease}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(45,27,78,.2)}
+.service-card img{width:100%;height:100%;object-fit:cover}
+.service-card>div{padding:24px;display:flex;flex-direction:column}
+.service-card .icon{color:var(--teal);width:26px;height:26px;margin-bottom:12px}
+.service-card h3{margin-bottom:8px}
+.service-card p{font-size:.93rem;flex:1}
+
+/* Sección legal (España/Argentina) */
+.legal-section{background:var(--white)}
+.legal-section.alt{background:var(--aqua)}
+.legal-grid{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.legal-card{background:var(--lavender);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:8px;padding:26px;transition:transform .35s ease,box-shadow .35s ease}
+.legal-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(45,27,78,.14)}
+.legal-card h3{margin:12px 0 10px}
+.badge{background:var(--teal);border-radius:999px;color:var(--purple-950);display:inline-block;font-size:.74rem;font-weight:900;letter-spacing:1px;padding:6px 13px;text-transform:uppercase}
+.badge.accent{background:var(--purple-900);color:var(--white)}
+.legal-ref{color:var(--teal-dark);font-size:.82rem;font-weight:900;margin-top:14px;letter-spacing:.4px}
+.notice{background:linear-gradient(135deg,var(--purple-900),var(--purple-800));border-radius:8px;margin-top:32px;padding:26px 28px}
+.notice p{color:rgba(255,255,255,.9)}
+.notice strong{color:var(--teal)}
+
+/* Enlaces de servicios en listas */
+.services-lite{background:var(--white)}
+.service-links{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px}
+.service-links a{align-items:center;background:var(--lavender);border:1px solid var(--line);border-radius:8px;color:var(--purple-900);display:flex;font-weight:800;gap:10px;justify-content:space-between;padding:18px 22px;transition:transform .3s ease,background .3s ease}
+.service-links a:hover{background:var(--aqua);transform:translateX(4px)}
+.service-links .icon{width:18px;height:18px;color:var(--teal-dark)}
+.process-grid.light article{border-top:3px solid var(--teal)}
+
+/* Galicia */
+.galicia{background:linear-gradient(180deg,var(--white),var(--aqua))}
+.galicia-inner{display:grid;gap:44px;grid-template-columns:minmax(0,1fr) minmax(280px,.5fr);align-items:start}
+.galicia-contact{background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);padding:28px}
+.galicia-contact h4{align-items:center;color:var(--purple-900);display:flex;font-size:1rem;gap:8px;margin-bottom:12px}
+.galicia-contact .icon{color:var(--teal)}
+.galicia-contact p{margin-top:6px}
+.galicia-contact a{font-weight:800;color:var(--purple-900)}
+
+/* FAQ */
+.faq-section{background:var(--paper)}
+.faq{display:grid;gap:12px;max-width:860px}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.faq-item summary{cursor:pointer;font-weight:800;color:var(--purple-900);padding:20px 24px;list-style:none;position:relative;padding-right:52px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--teal);font-size:1.5rem;font-weight:900;transition:transform .25s ease}
+.faq-item[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq-item .faq-a{padding:0 24px 22px}
+
+/* CTA band + lead magnet */
+.cta-band,.lead-magnet{background:linear-gradient(135deg,var(--purple-950),var(--purple-800))}
+.cta-band-inner{display:grid;gap:32px;grid-template-columns:minmax(0,1fr) auto;align-items:center;max-width:1100px}
+.cta-band h2,.lead-magnet h2{color:var(--white);font-size:clamp(1.6rem,3vw,2.3rem)}
+.cta-band p,.lead-magnet p{color:rgba(255,255,255,.82);margin-top:12px;max-width:640px}
+.cta-band-actions{display:flex;flex-wrap:wrap;gap:14px}
+.cta-band-actions .button .icon{margin-right:8px}
+.lead-magnet .eyebrow{margin-bottom:10px}
+
+/* Detalle de servicio */
+.service-detail{background:var(--white)}
+.service-detail-grid{display:grid;gap:56px;grid-template-columns:minmax(0,1fr) minmax(300px,.55fr);align-items:start}
+.service-detail h2{font-size:1.6rem;margin-bottom:18px}
+.check-list{list-style:none;display:grid;gap:12px}
+.check-list li{background:var(--lavender);border-radius:8px;color:var(--muted);line-height:1.65;padding:16px 18px 16px 46px;position:relative}
+.check-list li::before{content:"✓";position:absolute;left:18px;top:16px;color:var(--teal-dark);font-weight:900}
+.check-list li strong{color:var(--purple-900)}
+.service-side{display:grid;gap:20px;position:sticky;top:140px}
+.service-side img{border-radius:8px;box-shadow:var(--shadow);width:100%;height:auto}
+.service-side-box{background:var(--aqua);border:1px solid var(--line);border-radius:8px;padding:22px}
+.service-side-box h4{color:var(--purple-900);font-size:.82rem;letter-spacing:1px;margin-bottom:12px;text-transform:uppercase}
+.dash-list{list-style:none;display:grid;gap:9px}
+.dash-list li{color:var(--muted);font-size:.93rem;padding-left:18px;position:relative;line-height:1.55}
+.dash-list li::before{content:"—";position:absolute;left:0;color:var(--teal)}
+.related-strip{background:var(--paper);padding-top:56px;padding-bottom:72px}
+.related-strip .service-links{margin-top:18px}
+
+/* Equipo completo */
+.team-full{background:var(--white);display:grid;gap:56px}
+.bio{display:grid;gap:44px;grid-template-columns:minmax(260px,.45fr) minmax(0,1fr);align-items:center}
+.bio.reverse{grid-template-columns:minmax(0,1fr) minmax(260px,.45fr)}
+.bio.reverse .bio-photo{order:2}
+.bio-photo{border-radius:8px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+.bio-photo::after{content:"";position:absolute;inset:0;background:var(--grad-photo);pointer-events:none}
+.bio-photo img{width:100%;height:100%;object-fit:cover;max-height:440px}
+.bio-copy h2{font-size:1.7rem;margin-bottom:4px}
+.bio-copy h4{color:var(--teal-dark);font-size:.85rem;letter-spacing:1px;margin-bottom:16px;text-transform:uppercase}
+.bio-copy p{margin-top:12px}
+.bio-copy .credentials{border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;font-weight:800;margin-top:18px;padding-top:14px}
+
+/* Artículos */
+.article-body{background:var(--white);margin:0 auto;padding:72px max(6vw,28px) 88px;max-width:100%}
+.article-body>*{max-width:780px;margin-left:auto;margin-right:auto}
+.article-body h2{font-size:1.55rem;margin:40px auto 14px}
+.article-body p{margin-top:12px}
+.article-body .lead{color:var(--purple-900);font-size:1.15rem;font-weight:600;line-height:1.6}
+.article-body .check-list{margin-top:16px}
+.article-body .notice{margin-top:36px}
+.article-footer{background:var(--aqua);border:1px solid var(--line);border-radius:8px;margin-top:48px!important;padding:30px}
+.article-footer p{color:var(--ink)}
+.blog-card{border-style:solid}
+.blog-card.featured{background:linear-gradient(160deg,#eef9f8,var(--aqua));border-color:var(--teal)}
+
+/* Formulario extra */
+.contact-form select{background:var(--lavender);border:1px solid var(--line);border-radius:6px;color:var(--ink);font:inherit;min-height:48px;padding:12px 14px;width:100%}
+.contact-form select:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(91,196,191,.18);outline:none}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.scheduling{background:var(--white);text-align:center}
+
+/* Responsive nuevos componentes */
+@media (max-width:1120px){
+  .service-cards,.legal-grid{grid-template-columns:1fr}
+  .service-detail-grid{grid-template-columns:minmax(0,1fr) minmax(280px,.6fr)}
+}
+@media (max-width:860px){
+  .country-cards,.service-links,.legal-grid{grid-template-columns:1fr}
+  .service-detail-grid,.galicia-inner{grid-template-columns:1fr}
+  .service-side{position:static}
+  .bio,.bio.reverse{grid-template-columns:1fr}
+  .bio.reverse .bio-photo{order:0}
+  .bio-photo img{max-height:380px}
+  .cta-band-inner{grid-template-columns:1fr}
+  .service-card{grid-template-columns:1fr}
+  .service-card img{height:180px}
+  .page-hero{padding:64px max(5vw,20px)}
+  .wa-float{right:16px;bottom:16px;width:54px;height:54px}
 }
