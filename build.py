@@ -78,7 +78,7 @@ def head(title, desc, path, extra_schema=None, hreflang=False, og_type="website"
   <link rel="canonical" href="{canonical}">{hl}
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preload" as="image" href="/img/logo-principal.webp">
+  <link rel="preload" as="image" href="/img/logo-horizontal.png">
   <meta property="og:type" content="{og_type}">
   <meta property="og:site_name" content="GEN+ Igualdad">
   <meta property="og:title" content="{title}">
@@ -105,7 +105,7 @@ def header():
     links = "".join(f'<a href="{h}">{t}</a>' for h,t in NAV_LINKS)
     return f"""
 <header class="site-header">
-  <a class="brand" href="/" aria-label="GEN+ Igualdad — inicio"><img src="/img/logo-principal.webp" alt="GEN+ Igualdad" width="265" height="180"></a>
+  <a class="brand" href="/" aria-label="GEN+ Igualdad — inicio"><img src="/img/logo-horizontal.png" alt="GEN+ Igualdad" width="1049" height="167"></a>
   <div class="nav-wrap">
     <nav class="nav" aria-label="Navegación principal">{links}</nav>
     <a class="nav-cta" href="/contacto">Agendar consulta</a>
