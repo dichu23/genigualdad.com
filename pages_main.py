@@ -13,7 +13,7 @@ home_body = f"""
     <div class="trust-strip"><span>INDEC</span><span>FLACSO</span><span>UNTREF</span><span>ONU Mujeres</span><span>RUCVM</span><span>USC Galicia</span></div>
   </div>
   <figure class="hero-image">
-    <img src="/img/hero-laura.webp" alt="Laura Rodríguez, del equipo de Gen+ Igualdad, capacitando sobre historia de las políticas de género" width="1200" height="800" fetchpriority="high">
+    <img src="/img/hero-laura.webp" alt="Equipo de Gen+ Igualdad elaborando un protocolo de igualdad" width="1200" height="800" fetchpriority="high">
     <figcaption>Más de 25 años formando equipos en el territorio</figcaption>
   </figure>
 </section>
