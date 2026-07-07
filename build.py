@@ -119,7 +119,7 @@ def header():
 </div>"""
 
 def wa_float():
-    return f'<a class="wa-float" href="{WA_LINK}" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp" data-ga="contact_whatsapp">{IC["wa"]}</a>'
+    return f'<a class="wa-float" href="{WA_LINK}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-ga="contact_whatsapp">{IC["wa"]}</a>'
 
 def footer():
     return f"""
@@ -165,8 +165,8 @@ var p={nombre:document.getElementById('nombre').value,email:document.getElementB
 var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Enviando…';
 try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
 if(r.ok){mc.innerHTML='<p class="success">Gracias '+p.nombre+'. Te responderemos a la brevedad.</p>';f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
-else{mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escribinos por WhatsApp o a ${EMAIL}.</p>'}}
-catch(e){mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escribinos por WhatsApp o a ${EMAIL}.</p>'}
+else{mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a ${EMAIL}.</p>'}}
+catch(e){mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a ${EMAIL}.</p>'}
 btn.disabled=false;btn.textContent='Enviar consulta';setTimeout(function(){mc.innerHTML=''},8000)});}
 })();
 </script>""".replace("${EMAIL}", EMAIL)
@@ -195,7 +195,7 @@ def contact_section(country=None):
     <h2>Conversemos sobre las necesidades de tu organización</h2>
     <p>Coordinamos una reunión inicial sin costo para analizar el punto de partida y diseñar una propuesta clara, viable y adaptada a tu equipo.</p>
     {sched}
-    <p style="margin-top:18px"><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">Escribinos por WhatsApp</a></p>
+    <p style="margin-top:18px"><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">Escríbenos por WhatsApp</a></p>
     <div class="contact-locations">{locs}</div>
     <div class="contact-email"><p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p></div>
   </div>

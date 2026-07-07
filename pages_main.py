@@ -7,7 +7,7 @@ home_body = f"""
 <section class="hero" id="inicio">
   <div class="hero-copy">
     <p class="eyebrow">Consultoría en género · Argentina y España</p>
-    <h1>Convertimos el cumplimiento en igualdad en una ventaja para tu organización</h1>
+    <h1>Convertimos el cumplimiento de igualdad en una ventaja para tu organización</h1>
     <p class="lead">Protocolos frente al acoso, planes de igualdad, diagnósticos y capacitación con más de 25 años de método: el mismo rigor que aplicamos en el INDEC, la FLACSO y el territorio, al servicio de empresas e instituciones.</p>
     <div class="hero-actions"><a class="button primary" href="/contacto">Agendar consulta</a><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></div>
     <div class="trust-strip"><span>INDEC</span><span>FLACSO</span><span>UNTREF</span><span>ONU Mujeres</span><span>RUCVM</span><span>USC Galicia</span></div>
@@ -19,17 +19,17 @@ home_body = f"""
 </section>
 
 <section class="country-band">
-  <div class="section-title"><p class="eyebrow">Dos mercados, un mismo método</p><h2>¿Desde dónde nos visitás?</h2></div>
+  <div class="section-title"><p class="eyebrow">Dos mercados, un mismo método</p><h2>¿Desde dónde nos visitas?</h2></div>
   <div class="country-cards">
     <a class="country-card" href="/espana">
       <p class="eyebrow">España</p>
-      <h3>Cumplí con la normativa de igualdad</h3>
+      <h3>Cumple con la normativa de igualdad</h3>
       <p>Protocolo frente al acoso, plan de igualdad, registro retributivo y medidas LGTBI: qué exige la ley a tu empresa y cómo resolverlo sin fricción.</p>
       <span class="card-link">Ver obligaciones y servicios {IC["arrow"]}</span>
     </a>
     <a class="country-card" href="/argentina">
       <p class="eyebrow">Argentina</p>
-      <h3>Prevení la violencia laboral</h3>
+      <h3>Prevenga la violencia laboral</h3>
       <p>Convenio 190 de la OIT, protocolos, herramientas de recepción de denuncias y capacitación para equipos y RR.HH. en todo el país.</p>
       <span class="card-link">Ver marco normativo y servicios {IC["arrow"]}</span>
     </a>
