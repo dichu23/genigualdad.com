@@ -8,7 +8,7 @@ home_body = f"""
   <div class="hero-copy">
     <p class="eyebrow">Consultoría en género · Argentina y España</p>
     <h1>Convertimos el cumplimiento de igualdad en una ventaja para tu organización</h1>
-    <p class="lead">Protocolos frente al acoso, planes de igualdad, diagnósticos y capacitación con más de 25 años de método: el mismo rigor que aplicamos en el INDEC, la FLACSO y el territorio, al servicio de empresas e instituciones.</p>
+    <p class="lead">Protocolos frente al acoso, planes de igualdad, diagnósticos y capacitación con más de 25 años de reconocida experiencia en la temática: el mismo rigor que aplicamos en el INDEC, la FLACSO y el territorio, al servicio de empresas e instituciones.</p>
     <div class="hero-actions"><a class="button primary" href="/contacto">Agendar consulta</a><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></div>
     <div class="trust-strip"><span>INDEC</span><span>FLACSO</span><span>UNTREF</span><span>ONU Mujeres</span><span>RUCVM</span><span>USC Galicia</span></div>
   </div>
@@ -51,7 +51,7 @@ home_body = f"""
     <p>Un recorrido sólido en capacitaciones y talleres de sensibilización sobre violencia de género, con perspectiva y enfoque comunitario, construido en todo el país en el marco del RUCVM.</p>
   </div>
   <div class="why-grid">
-    <article>{IC["check"]}<h3>Método probado</h3><p>Cada intervención se apoya en 25 años de trabajo estadístico, académico y territorial, adaptado a cada organización.</p></article>
+    <article>{IC["check"]}<h3>Resultados que se sostienen</h3><p>Cada intervención se apoya en 25 años de trabajo estadístico, académico y territorial, adaptado a cada organización.</p></article>
     <article>{IC["ear"]}<h3>Escuchamos antes de actuar</h3><p>Adaptamos cada propuesta a la realidad de quienes la reciben: el diagnóstico siempre viene antes que la receta.</p></article>
     <article>{IC["chat"]}<h3>Hacemos fácil lo difícil</h3><p>Hablamos claro, conectamos con las personas y generamos impacto real en temas sensibles.</p></article>
     <article>{IC["scale"]}<h3>Respaldo institucional</h3><p>Trayectoria en INDEC, FLACSO, UNTREF, ONU Mujeres y el ámbito jurídico de Argentina y España.</p></article>
@@ -208,7 +208,7 @@ home_body = f"""
 
 page("index.html",
      "GEN+ Igualdad | Protocolos, planes de igualdad y capacitación en Argentina y España",
-     "Consultora especializada en violencia laboral, protocolos y planes de igualdad y capacitación en género. Más de 25 años de método en Argentina y España.",
+     "Consultora especializada en violencia laboral, protocolos y planes de igualdad y capacitación en género. Más de 25 años de reconocida experiencia en la temática en Argentina y España.",
      "/", home_body, hreflang=True)
 
 # ============================================================ ESPAÑA
@@ -313,7 +313,7 @@ argentina_body = f"""
   <div class="page-hero-copy">
     <p class="eyebrow">Empresas y organizaciones en Argentina</p>
     <h1>La violencia laboral es un riesgo real. Prevenirla es una decisión estratégica.</h1>
-    <p class="lead">Desde la vigencia del Convenio 190 de la OIT (Ley 27.580), la prevención de la violencia y el acoso dejó de ser opcional: es un estándar de gestión. Diseñamos protocolos, herramientas de denuncia y capacitaciones con 25 años de método.</p>
+    <p class="lead">Desde la vigencia del Convenio 190 de la OIT (Ley 27.580), la prevención de la violencia y el acoso dejó de ser opcional: es un estándar de gestión. Diseñamos protocolos, herramientas de denuncia y capacitaciones con 25 años de reconocida experiencia en la temática.</p>
     <div class="hero-actions"><a class="button primary" href="/contacto">Agendar consulta</a><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></div>
   </div>
 </section>
@@ -355,7 +355,7 @@ argentina_body = f"""
 
 page("argentina.html",
      "Prevención de violencia laboral y protocolos para empresas | GEN+ Igualdad Argentina",
-     "Protocolos contra la violencia y el acoso laboral, herramientas de denuncia y capacitación bajo el estándar del Convenio 190 OIT (Ley 27.580). 25 años de método.",
+     "Protocolos contra la violencia y el acoso laboral, herramientas de denuncia y capacitación bajo el estándar del Convenio 190 OIT (Ley 27.580). 25 años de reconocida experiencia en la temática.",
      "/argentina", argentina_body, extra_schema=[faq_ar_schema], hreflang=True)
 
 print("Home + países listos.")

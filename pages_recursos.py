@@ -185,7 +185,7 @@ recursos_body = f"""
     {bc_r}
     <p class="eyebrow">Recursos</p>
     <h1>Guías y artículos sobre igualdad en el trabajo</h1>
-    <p class="lead">Contenido práctico basado en 25 años de método: marco normativo explicado en claro, guías de implementación y criterios técnicos para RR.HH.</p>
+    <p class="lead">Contenido práctico basado en 25 años de reconocida experiencia en la temática: marco normativo explicado en claro, guías de implementación y criterios técnicos para RR.HH.</p>
   </div>
 </section>
 <section class="resources">
