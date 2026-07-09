@@ -58,17 +58,17 @@ function buildLeadReportHtml(nombre, d) {
   const cur = d.cur || "€";
   const gap = Number(d.gap) || 0;
   const absG = Math.abs(gap);
-  const gLabel = d.weighted ? "Brecha ponderada" : "Brecha media";
+  const gLabel = d.weighted ? "Brecha de género ponderada" : "Brecha de género media";
 
   let bandBg, bandFg, bandLabel, bandMsg;
   if (absG < 5) {
-    bandBg = "#e3f4ee"; bandFg = "#1f6b52"; bandLabel = "Brecha baja";
+    bandBg = "#e3f4ee"; bandFg = "#1f6b52"; bandLabel = "Brecha de género baja";
     bandMsg = "La diferencia es pequeña. Conviene documentarla igual en el registro retributivo y revisar que no se concentre en alguna categoría.";
   } else if (absG < 25) {
-    bandBg = "#fdf0dc"; bandFg = "#8a5a12"; bandLabel = "Brecha media";
+    bandBg = "#fdf0dc"; bandFg = "#8a5a12"; bandLabel = "Brecha de género media";
     bandMsg = "Hay una diferencia relevante. Revisá si responde a la estructura de puestos o a diferencias en igual trabajo, y dejá registrada la explicación.";
   } else {
-    bandBg = "#f6e0e6"; bandFg = "#8a1f3d"; bandLabel = "Brecha alta";
+    bandBg = "#f6e0e6"; bandFg = "#8a1f3d"; bandLabel = "Brecha de género alta";
     bandMsg = "La diferencia iguala o supera el 25%. En España, en empresas de 50+ personas, este nivel obliga a justificar por escrito que no responde al sexo. Recomendamos una auditoría retributiva.";
   }
   if (gap < 0) {
@@ -84,12 +84,12 @@ function buildLeadReportHtml(nombre, d) {
     const diff = gap - natGap;
     const cmp = Math.abs(diff) < 0.5 ? "en línea con" : diff < 0 ? "por debajo de" : "por encima de";
     benchHtml = `
-      <p style="font:600 12px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#40365a;margin:26px 0 8px">Tu brecha vs. la media de ${esc(d.pais)}</p>
+      <p style="font:600 12px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#40365a;margin:26px 0 8px">Tu brecha de género vs. la media de ${esc(d.pais)}</p>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
         ${benchBar("Tu organización", gap, TEAL, scale)}
         ${benchBar("Media " + esc(d.pais), natGap, "#b9b2c6", scale)}
       </table>
-      <p style="font:13px Arial,sans-serif;color:#6b6178;margin:8px 0 0">Tu brecha está <strong>${cmp}</strong> la media nacional (${fmtPct(natGap)}). Fuente: ${esc(d.natSrc || "")}.</p>`;
+      <p style="font:13px Arial,sans-serif;color:#6b6178;margin:8px 0 0">Tu brecha de género está <strong>${cmp}</strong> la media nacional (${fmtPct(natGap)}). Fuente: ${esc(d.natSrc || "")}.</p>`;
   }
 
   // Gráfico por categoría
@@ -98,6 +98,13 @@ function buildLeadReportHtml(nombre, d) {
   rows.forEach((c) => { maxSal = Math.max(maxSal, Number(c.w) || 0, Number(c.m) || 0); });
   let chartHtml = "";
   if (rows.length && maxSal > 0) {
+    let _sw=0,_sm=0,_nw=0,_nm=0;
+    rows.forEach((c)=>{ if(Number(c.nw)>0){_sw+=Number(c.nw)*Number(c.w);_nw+=Number(c.nw);} if(Number(c.nm)>0){_sm+=Number(c.nm)*Number(c.m);_nm+=Number(c.nm);} });
+    const _wgt=_nw>0&&_nm>0;
+    const _avgW=_wgt?_sw/_nw:(rows.reduce((a,c)=>a+(Number(c.w)||0),0)/rows.length);
+    const _avgM=_wgt?_sm/_nm:(rows.reduce((a,c)=>a+(Number(c.m)||0),0)/rows.length);
+    const _md=_avgM-_avgW;
+    const moneyLine = _md>0 ? `<p style="font:14px Arial,sans-serif;color:#221c2e;margin:16px 0 0">En promedio, los hombres ganan <strong>${cur} ${fmtN(_md)}</strong> más que las mujeres.</p>` : (_md<0 ? `<p style="font:14px Arial,sans-serif;color:#221c2e;margin:16px 0 0">En promedio, las mujeres ganan <strong>${cur} ${fmtN(-_md)}</strong> más que los hombres.</p>` : "");
     chartHtml = `
       <p style="font:600 12px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#40365a;margin:26px 0 6px">Salario medio por categoría (mujeres vs. hombres)</p>
       <p style="font:12px Arial,sans-serif;color:#6b6178;margin:0 0 8px">
@@ -108,13 +115,13 @@ function buildLeadReportHtml(nombre, d) {
         <div style="margin:14px 0">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
             <td style="font:700 14px Arial,sans-serif;color:#221c2e">${esc(c.name)}</td>
-            <td style="font:700 13px Arial,sans-serif;color:${TEAL};text-align:right">brecha ${fmtPct(c.gap)}</td>
+            <td style="font:700 13px Arial,sans-serif;color:${TEAL};text-align:right">brecha de género ${fmtPct(c.gap)}</td>
           </tr></table>
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-top:4px">
             ${salBar("Mujeres", Number(c.w) || 0, TEAL, maxSal, cur)}
             ${salBar("Hombres", Number(c.m) || 0, PURPLE, maxSal, cur)}
           </table>
-        </div>`).join("")}`;
+        </div>`).join("")}${moneyLine}`;
   }
 
   const repTxt = d.rep != null ? fmtPct(d.rep) : "—";
@@ -128,7 +135,7 @@ function buildLeadReportHtml(nombre, d) {
         <img src="https://www.genigualdad.com/img/logo-principal.png" alt="GEN+ Igualdad" width="150" style="width:150px;max-width:60%;height:auto">
       </td></tr>
       <tr><td style="padding:8px 32px 0">
-        <p style="font:600 12px Arial,sans-serif;letter-spacing:.8px;text-transform:uppercase;color:#4aa9a4;margin:0">Informe de brecha salarial</p>
+        <p style="font:600 12px Arial,sans-serif;letter-spacing:.8px;text-transform:uppercase;color:#4aa9a4;margin:0">Informe de brecha salarial de género</p>
         <h1 style="font:600 22px Georgia,serif;color:#221c2e;margin:6px 0 2px">Hola ${esc(nombre)}, acá está tu informe</h1>
         <p style="font:14px Arial,sans-serif;color:#6b6178;line-height:1.5;margin:6px 0 0">${org ? "Organización: <strong>" + org + "</strong> · " : ""}País: ${esc(d.pais)}</p>
       </td></tr>
@@ -162,7 +169,7 @@ function buildLeadReportHtml(nombre, d) {
       </td></tr>
 
       <tr><td style="padding:22px 32px 0">
-        <p style="font:14px Arial,sans-serif;color:#3a3348;line-height:1.55;margin:0">Si la brecha te dio media o alta, en Gen+ Igualdad hacemos la <strong>auditoría retributiva</strong> completa: diagnóstico, valoración de puestos y plan de actuación. La primera consulta es sin costo.</p>
+        <p style="font:14px Arial,sans-serif;color:#3a3348;line-height:1.55;margin:0">Si la brecha de género te dio media o alta, en Gen+ Igualdad hacemos la <strong>auditoría retributiva</strong> completa: diagnóstico, valoración de puestos y plan de actuación. La primera consulta es sin costo.</p>
         <p style="margin:16px 0 0"><a href="https://www.genigualdad.com/contacto" style="display:inline-block;background:#221c2e;color:#faf8f4;text-decoration:none;padding:13px 26px;font:700 13px Arial,sans-serif;letter-spacing:.4px">Agendar una consulta</a></p>
       </td></tr>
 
@@ -247,7 +254,7 @@ export default async function handler(req, res) {
         to: [email],
         replyTo: "contacto@genigualdad.com",
         reply_to: "contacto@genigualdad.com",
-        subject: "Tu informe de brecha salarial · Gen+ Igualdad",
+        subject: "Tu informe de brecha salarial de género · Gen+ Igualdad",
         html: leadHtml,
       });
       if (e2) {
