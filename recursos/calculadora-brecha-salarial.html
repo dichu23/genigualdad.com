@@ -374,6 +374,7 @@ detalleTexto(lastCalc)+'\n\n'+
 '(Generado con la calculadora de brecha salarial de genigualdad.com)';
 var p={nombre:document.getElementById('rNombre').value,email:document.getElementById('rEmail').value,telefono:'',pais:lastCalc.pais,mensaje:informe,copiaAlLead:true,datos:lastCalc};
 var btn=rf.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Enviando…';
+rmsg.innerHTML='<p style="color:#6b6178">Enviando tu informe… puede tardar unos segundos.</p>';
 try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
 if(r.ok){rmsg.innerHTML='<p class="success">¡Listo! Te enviamos el informe a '+p.email+'. Revisá también la carpeta de spam por las dudas.</p>';rf.reset();if(window.gtag){gtag('event','email_report');gtag('event','generate_lead',{method:'informe_brecha_email'});}}
 else{rmsg.innerHTML='<p class="error">Hubo un error. Escribinos por WhatsApp o a contacto@genigualdad.com.</p>'}}
