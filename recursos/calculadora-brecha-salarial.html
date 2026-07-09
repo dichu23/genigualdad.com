@@ -66,7 +66,7 @@
     .bar-row{display:flex;align-items:center;gap:12px;margin:9px 0;font-size:.9rem}
     .bar-row .lbl{width:130px;color:var(--ink)}
     .bar-track{flex:1;background:var(--lavender);height:24px;position:relative;min-width:60px}
-    .bar-fill{height:100%;background:var(--teal-dark)}
+    .bar-fill{display:block;height:100%;background:var(--teal-dark)}
     .bar-fill.nat{background:#b9b2c6}
     .bar-val{width:56px;text-align:right;font-weight:700;color:var(--ink)}
     .bench-src{font-size:.8rem;color:var(--muted);margin-top:8px}
@@ -79,7 +79,7 @@
     .cc-bar{display:flex;align-items:center;gap:10px;margin:4px 0;font-size:.8rem}
     .cc-bar .cc-lbl{width:64px;color:var(--muted)}
     .cc-bar .cc-track{flex:1;background:var(--lavender);height:18px;min-width:40px}
-    .cc-bar .cc-fill{height:100%}
+    .cc-bar .cc-fill{display:block;height:100%}
     .cc-bar .cc-amt{width:90px;text-align:right;color:var(--ink)}
     .email-report{margin-top:28px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--teal);padding:26px 28px}
     .email-report .er-logo{height:32px;width:auto;display:block;margin-bottom:16px}
@@ -142,7 +142,6 @@
     </div>
   </div>
 
-  <p class="example-note"><strong>Ejemplo cargado</strong> para que veas cómo funciona la herramienta. Reemplazá los números por los de tu organización, o usá <strong>Vaciar datos</strong> para empezar de cero.</p>
   <div class="calc-scroll">
   <table class="calc-table" id="calcTable">
     <thead>
@@ -157,11 +156,11 @@
       </tr>
     </thead>
     <tbody id="calcBody">
-      <tr><td><input type="text" class="c-cat" value="Dirección"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0" value="3"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0" value="7"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0" value="62000"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0" value="72000"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
-      <tr><td><input type="text" class="c-cat" value="Mandos intermedios"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0" value="8"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0" value="12"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0" value="45000"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0" value="49000"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
-      <tr><td><input type="text" class="c-cat" value="Administración"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0" value="15"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0" value="5"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0" value="31000"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0" value="33000"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
-      <tr><td><input type="text" class="c-cat" value="Comercial / Ventas"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0" value="10"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0" value="14"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0" value="38000"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0" value="44000"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
-      <tr><td><input type="text" class="c-cat" value="Operaciones"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0" value="6"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0" value="18"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0" value="34000"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0" value="36000"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
+      <tr><td><input type="text" class="c-cat" value="Dirección"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
+      <tr><td><input type="text" class="c-cat" value="Mandos intermedios"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
+      <tr><td><input type="text" class="c-cat" value="Administración"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
+      <tr><td><input type="text" class="c-cat" value="Comercial / Ventas"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
+      <tr><td><input type="text" class="c-cat" value="Operaciones"></td><td><input type="number" class="c-nw" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-nm" min="0" step="1" placeholder="0"></td><td><input type="number" class="c-w" min="0" step="any" placeholder="0"></td><td><input type="number" class="c-m" min="0" step="any" placeholder="0"></td><td class="rowgap">—</td><td class="del"><button type="button" class="del-row" aria-label="Eliminar fila">×</button></td></tr>
     </tbody>
   </table>
   </div>
@@ -399,8 +398,6 @@ else{mc.innerHTML='<p class="error">Hubo un error. Escribinos por WhatsApp o a c
 catch(e){mc.innerHTML='<p class="error">Hubo un error. Escribinos por WhatsApp o a contacto@genigualdad.com y te la enviamos.</p>'}
 btn.disabled=false;btn.textContent='Descargar la plantilla'});}
 
-/* Cálculo automático del ejemplo precargado al abrir la página */
-try{document.getElementById('calcBtn').click();}catch(e){}
 })();
 </script>
 </body>
