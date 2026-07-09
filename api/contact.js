@@ -49,11 +49,16 @@ export default async function handler(req, res) {
   }
 
   // Copia al lead: si la persona pidió recibir su informe, se lo enviamos.
+  let copyOk = null;
+  let copyErr = null;
   if (copiaAlLead) {
+    // Espaciamos el segundo envío para respetar el límite de 2 req/seg de Resend.
+    await new Promise((r) => setTimeout(r, 700));
     try {
-      await resend.emails.send({
+      const { error: e2 } = await resend.emails.send({
         from: "Gen+ Igualdad <contacto@genigualdad.com>",
         to: [email],
+        replyTo: "contacto@genigualdad.com",
         reply_to: "contacto@genigualdad.com",
         subject: "Tu informe de brecha salarial · Gen+ Igualdad",
         html: `
@@ -73,10 +78,21 @@ export default async function handler(req, res) {
           </div>
         `,
       });
+      if (e2) {
+        copyOk = false;
+        copyErr = e2.message || JSON.stringify(e2);
+        console.error("Copia al lead falló (Resend):", e2);
+      } else {
+        copyOk = true;
+      }
     } catch (e) {
-      // No bloqueamos la respuesta si la copia al lead falla: el aviso al equipo ya se envió.
+      copyOk = false;
+      copyErr = e && e.message ? e.message : String(e);
+      console.error("Copia al lead lanzó excepción:", e);
     }
   }
 
-  return res.status(200).json({ message: "Mensaje recibido correctamente" });
+  return res
+    .status(200)
+    .json({ message: "Mensaje recibido correctamente", copyOk, copyErr });
 }
