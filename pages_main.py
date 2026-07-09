@@ -19,7 +19,7 @@ home_body = f"""
 </section>
 
 <section class="country-band">
-  <div class="section-title"><p class="eyebrow">Dos mercados, un mismo método</p><h2>¿Desde dónde nos visitas?</h2></div>
+  <div class="section-title"><p class="eyebrow">Presencia en Argentina y España</p><h2>¿Desde dónde nos visitas?</h2></div>
   <div class="country-cards">
     <a class="country-card" href="/espana">
       <p class="eyebrow">España</p>
