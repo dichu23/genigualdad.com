@@ -354,7 +354,7 @@ ch+='<div class="cc-row"><div class="cc-name"><span>'+esc(c.name)+'</span><span 
 '<div class="cc-bar"><span class="cc-lbl">Hombres</span><span class="cc-track"><span class="cc-fill" style="width:'+mw+'%;background:var(--purple-800)"></span></span><span class="cc-amt">'+cur+' '+fmtN(c.m)+'</span></div></div>';});
 chart.innerHTML=ch;
 }else{chart.innerHTML='';}
-lastCalc={org:document.getElementById('org').value,pais:(NAT[paisSel.value]||NAT.ES).name,cur:curOf(),gap:overall,weighted:weighted,rep:(tot>0?totMuj/tot*100:null),plantilla:tot,cats:n,rows:cats};
+lastCalc={org:document.getElementById('org').value,pais:(NAT[paisSel.value]||NAT.ES).name,natGap:(NAT[paisSel.value]||NAT.ES).gap,natSrc:(NAT[paisSel.value]||NAT.ES).src,cur:curOf(),gap:overall,weighted:weighted,rep:(tot>0?totMuj/tot*100:null),totMuj:totMuj,totHom:totHom,plantilla:tot,cats:n,rows:cats};
 res.classList.add('show');
 if(window.gtag)gtag('event','calculate_gap',{value:Math.round(overall),weighted:weighted});
 res.scrollIntoView({behavior:'smooth',block:'center'});
@@ -372,7 +372,7 @@ var informe='Informe de brecha salarial — '+(lastCalc.org||'(organización no 
 '· Plantilla analizada: '+fmtN(lastCalc.plantilla)+' personas en '+lastCalc.cats+' categoría'+(lastCalc.cats>1?'s':'')+
 detalleTexto(lastCalc)+'\n\n'+
 '(Generado con la calculadora de brecha salarial de genigualdad.com)';
-var p={nombre:document.getElementById('rNombre').value,email:document.getElementById('rEmail').value,telefono:'',pais:lastCalc.pais,mensaje:informe,copiaAlLead:true};
+var p={nombre:document.getElementById('rNombre').value,email:document.getElementById('rEmail').value,telefono:'',pais:lastCalc.pais,mensaje:informe,copiaAlLead:true,datos:lastCalc};
 var btn=rf.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Enviando…';
 try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
 if(r.ok){rmsg.innerHTML='<p class="success">¡Listo! Te enviamos el informe a '+p.email+'. Revisá también la carpeta de spam por las dudas.</p>';rf.reset();if(window.gtag){gtag('event','email_report');gtag('event','generate_lead',{method:'informe_brecha_email'});}}
