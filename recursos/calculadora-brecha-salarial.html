@@ -191,7 +191,7 @@
       <form class="report-form" id="reportForm">
         <input id="rNombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
         <input id="rEmail" type="email" placeholder="tu@email.com" autocomplete="email" required>
-        <span class="hp" aria-hidden="true"><input id="rHp" type="text" tabindex="-1" autocomplete="off"></span>
+        <span class="hp" aria-hidden="true"><input id="rHp" type="checkbox" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore="true"></span>
         <button type="submit">Enviarme el informe</button>
       </form>
       <div class="report-msg" id="reportMsg" role="status" aria-live="polite"></div>
@@ -217,7 +217,7 @@
   <form class="contact-form" id="plantillaForm" style="margin-top:18px">
     <div><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
     <div><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required></div>
-    <div class="hp" aria-hidden="true"><label for="empresa_web">No completar</label><input id="empresa_web" name="empresa_web" type="text" tabindex="-1" autocomplete="off"></div>
+    <div class="hp" aria-hidden="true"><input id="empresa_web" type="checkbox" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore="true"></div>
     <div class="message-container" role="status" aria-live="polite"></div>
     <button type="submit">Descargar la plantilla</button>
   </form>
@@ -364,7 +364,7 @@ res.scrollIntoView({behavior:'smooth',block:'center'});
 var rf=document.getElementById('reportForm');
 if(rf){var rmsg=document.getElementById('reportMsg');
 rf.addEventListener('submit',async function(ev){ev.preventDefault();
-if(document.getElementById('rHp').value){return;}
+if(document.getElementById('rHp').checked){return;}
 if(!lastCalc){rmsg.innerHTML='<p class="error">Primero calculá la brecha con el botón de arriba.</p>';return;}
 var informe='Informe de brecha salarial — '+(lastCalc.org||'(organización no indicada)')+' ('+lastCalc.pais+')\n'+
 '· Brecha '+(lastCalc.weighted?'ponderada':'media')+': '+fmtPct(lastCalc.gap)+'\n'+
@@ -385,7 +385,7 @@ btn.disabled=false;btn.textContent='Enviarme el informe'});}
 var f=document.getElementById('plantillaForm');
 if(f){var mc=f.querySelector('.message-container');var PDF='/descargas/plantilla-registro-retributivo-genigualdad.pdf';
 f.addEventListener('submit',async function(ev){ev.preventDefault();
-if(document.getElementById('empresa_web').value){return;}
+if(document.getElementById('empresa_web').checked){return;}
 var org=document.getElementById('org').value;var paisNm=(NAT[paisSel.value]||NAT.ES).name;
 var det='';if(lastCalc){det=' — Resultado: brecha '+fmtPct(lastCalc.gap)+(lastCalc.rep!=null?', representación femenina '+fmtPct(lastCalc.rep):'')+', plantilla '+fmtN(lastCalc.plantilla)+', '+lastCalc.cats+' categoría'+(lastCalc.cats>1?'s':'');}
 var msj='Descarga plantilla registro retributivo (calculadora de brecha). Organización: '+(org||'(no indicada)')+det+detalleTexto(lastCalc);
