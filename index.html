@@ -307,4 +307,8 @@ try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'app
 if(r.ok){mc.innerHTML='<p class="success">Gracias '+p.nombre+'. Te responderemos a la brevedad.</p>';f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
 else{mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a contacto@genigualdad.com.</p>'}}
 catch(e){mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a contacto@genigualdad.com.</p>'}
-btn.disabled=false;btn.textContent='Enviar consulta';setTimeout(function(){mc.innerHTML=''}
+btn.disabled=false;btn.textContent='Enviar consulta';setTimeout(function(){mc.innerHTML=''},8000)});}
+})();
+</script>
+</body>
+</html>
