@@ -463,3 +463,24 @@ a:hover .card-link .icon,.card-link:hover .icon{transform:translateX(4px)}
   .page-hero{padding:64px max(5vw,20px)}
   .wa-float{right:16px;bottom:16px;width:54px;height:54px}
 }
+
+/* ---------- Ejes de trabajo (acordeón) ---------- */
+.ejes{border-top:1px solid var(--line);margin-top:40px}
+.eje-item{background:transparent;border:0;border-bottom:1px solid var(--line)}
+.eje-item summary{cursor:pointer;list-style:none;display:flex;gap:26px;align-items:baseline;position:relative;padding:26px 56px 26px 0}
+.eje-item summary::-webkit-details-marker{display:none}
+.eje-item summary::after{content:"+";position:absolute;right:8px;top:24px;color:var(--teal-dark);font-size:1.7rem;font-weight:400;line-height:1;transition:transform .25s ease}
+.eje-item[open] summary::after{transform:rotate(45deg)}
+.eje-num{color:var(--teal-dark);font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:.08em;min-width:34px}
+.eje-head{display:flex;flex-direction:column;gap:6px}
+.eje-title{color:var(--ink);font-family:var(--serif);font-size:1.35rem;font-weight:600;line-height:1.25}
+.eje-sub{color:var(--muted);font-size:.98rem;line-height:1.55}
+.eje-body{padding:0 0 30px 60px;max-width:820px}
+.eje-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.eje-links a{align-items:center;background:var(--white);border:1px solid var(--line);color:var(--ink);display:inline-flex;font-weight:600;font-size:.92rem;gap:10px;padding:14px 20px;transition:border-color .3s ease}
+.eje-links a:hover{border-color:var(--teal-dark)}
+.eje-links .icon{width:18px;height:18px;color:var(--teal-dark);flex:none}
+@media (max-width:640px){
+  .eje-item summary{gap:14px;padding:20px 44px 20px 0}
+  .eje-body{padding-left:0}
+}

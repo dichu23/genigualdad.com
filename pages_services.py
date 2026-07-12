@@ -133,6 +133,26 @@ service_page(
  extra="""<h2 style="margin-top:40px">Quién lo lidera</h2>
  <p>José Ignacio Sampedro, abogado con Máster en Derecho Transnacional de la Empresa y las Tecnologías Digitales (Universidad de Santiago de Compostela), integró la Unidad de Mujeres, Géneros y Diversidad del Ministerio de Seguridad de la Nación entre 2009 y 2023, y asesora a víctimas de violencia basada en género en ejercicio independiente.</p>""")
 
+# --- 5. Investigación social ---
+service_page(
+ "investigacion", "Investigación social aplicada",
+ "Investigación social: encuestas de violencia de género, grupos focales e indicadores | GEN+ Igualdad",
+ "Encuestas de violencia de género en poblaciones que las estadísticas oficiales no alcanzan, grupos focales, indicadores y estudios cualitativos y cuantitativos con estándar de estadística oficial.",
+ "Las buenas decisiones se apoyan en datos que existen. Producimos evidencia donde no llegan las estadísticas oficiales, con el rigor de 25 años en estadística pública (INDEC) y en evaluación de proyectos internacionales (ONU Mujeres · UN Trust Fund).",
+ ["Encuestas de violencia de género en poblaciones que las estadísticas oficiales no alcanzan",
+  "Grupos focales y entrevistas en profundidad",
+  "Elaboración de indicadores y estadísticas de género a medida",
+  "Estudios cualitativos y cuantitativos: diseño metodológico, trabajo de campo, análisis y difusión",
+  "Evaluación de programas y políticas con perspectiva de género",
+  "Informes con recomendaciones basadas en evidencia"],
+ "Administraciones públicas, organismos internacionales, universidades, fundaciones y organizaciones sociales que necesitan datos sólidos sobre violencia de género y desigualdades; y empresas que quieren medir con rigor su punto de partida.",
+ ["Diseño metodológico e instrumentos de relevamiento",
+  "Base de datos documentada",
+  "Informe de resultados con indicadores",
+  "Presentación ejecutiva de hallazgos"],
+ "territorio-fondo", "Trabajo de campo en investigación social",
+ rel(("/servicios/diagnosticos-y-planes","Diagnósticos y planes de igualdad"),("/equipo","Conocer al equipo")))
+
 # ============================================================ EQUIPO
 bc_eq, bc_eq_schema = breadcrumb([("/","Inicio"),(None,"Equipo")])
 team_schema = [{"@context":"https://schema.org","@type":"Person","name":n,"jobTitle":j,"worksFor":{"@type":"Organization","name":"GEN+ Igualdad"}}
