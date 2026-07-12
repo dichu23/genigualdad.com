@@ -99,7 +99,7 @@ def head(title, desc, path, extra_schema=None, hreflang=False, og_type="website"
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>"""
 
-NAV_LINKS = [("/espana","España"),("/argentina","Argentina"),("/#servicios","Servicios"),("/equipo","Equipo"),("/recursos","Recursos"),("/contacto","Contacto")]
+NAV_LINKS = [("/argentina","Argentina"),("/espana","España"),("/#servicios","Servicios"),("/equipo","Equipo"),("/recursos","Recursos"),("/contacto","Contacto")]
 
 def header():
     links = "".join(f'<a href="{h}">{t}</a>' for h,t in NAV_LINKS)
@@ -135,7 +135,7 @@ def footer():
     </div>
     <div>
       <h4>Mercados</h4>
-      <ul><li><a href="/espana">Empresas en España</a></li><li><a href="/argentina">Organizaciones en Argentina</a></li><li><a href="/equipo">Nuestro equipo</a></li><li><a href="/recursos">Recursos</a></li></ul>
+      <ul><li><a href="/argentina">Organizaciones en Argentina</a></li><li><a href="/espana">Empresas en España</a></li><li><a href="/equipo">Nuestro equipo</a></li><li><a href="/recursos">Recursos</a></li></ul>
     </div>
     <div>
       <h4>Contacto</h4>
