@@ -68,7 +68,7 @@ art2 = """
 <p class="lead">El Convenio 190 de la Organización Internacional del Trabajo es el primer tratado internacional que reconoce el derecho de toda persona a un mundo del trabajo libre de violencia y acoso. Si tu organización opera en Argentina o España, ya está dentro de su alcance. Esto es lo que cambia.</p>
 
 <h2>Qué es y desde cuándo rige</h2>
-<p>Adoptado por la OIT en 2019 junto con la Recomendación 206, el Convenio 190 obliga a los Estados que lo ratifican a exigir medidas de prevención y abordaje de la violencia y el acoso en el trabajo. Argentina lo ratificó mediante la Ley 27.580 y está vigente desde 2021; España lo ratificó en 2022 y está en vigor desde 2023.</p>
+<p>Adoptado por la OIT en 2019 junto con la Recomendación 206, el Convenio 190 obliga a los Estados que lo ratifican a exigir medidas de prevención y abordaje de la violencia y el acoso en el trabajo. Argentina lo ratificó mediante la Ley 27.580 el 11 de noviembre de 2020 y está vigente desde 2021; España lo ratificó en 2022 y está en vigor desde 2023.</p>
 <p><a href="https://normlex.ilo.org/dyn/nrmlx_es/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:3999810" target="_blank" rel="noopener">Texto oficial del Convenio 190 (OIT)</a></p>
 
 <h2>Una definición más amplia que la tradicional</h2>
