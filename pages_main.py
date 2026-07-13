@@ -236,12 +236,13 @@ espana_body = f"""
 </section>
 
 <section class="legal-section">
-  <div class="section-title"><p class="eyebrow">Lo que exige la ley</p><h2>Cuatro obligaciones que tu empresa debe tener resueltas</h2></div>
+  <div class="section-title"><p class="eyebrow">Lo que exige la ley</p><h2>Las obligaciones que tu empresa debe tener resueltas</h2></div>
   <div class="legal-grid">
     <article class="legal-card"><span class="badge">Todas las empresas</span><h3>Protocolo frente al acoso</h3><p>Medidas y procedimiento específico para prevenir el acoso sexual y por razón de sexo y dar cauce a las denuncias.</p><p class="legal-ref">Ley Orgánica 3/2007, art. 48</p></article>
     <article class="legal-card"><span class="badge accent">50+ personas</span><h3>Plan de igualdad</h3><p>Diagnóstico negociado, medidas evaluables, registro oficial y seguimiento periódico del plan.</p><p class="legal-ref">RD 901/2020</p></article>
     <article class="legal-card"><span class="badge">Todas las empresas</span><h3>Registro retributivo</h3><p>Registro salarial desagregado por sexo; auditoría retributiva para las empresas con plan de igualdad.</p><p class="legal-ref">RD 902/2020</p></article>
     <article class="legal-card"><span class="badge accent">50+ personas</span><h3>Medidas LGTBI</h3><p>Conjunto planificado de medidas y protocolo frente al acoso y la violencia contra las personas LGTBI.</p><p class="legal-ref">Ley 4/2023 · RD 1026/2024</p></article>
+    <article class="legal-card"><span class="badge">Vigente desde 2023</span><h3>Convenio 190 OIT</h3><p>Primer tratado internacional sobre violencia y acoso en el mundo del trabajo, ratificado por España en 2022. Alcanza a todos los sectores y modalidades, incluido el teletrabajo.</p><p class="legal-ref"><a href="https://normlex.ilo.org/dyn/nrmlx_es/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:3999810" target="_blank" rel="noopener">Texto oficial (OIT)</a></p></article>
   </div>
   <div class="notice"><p><strong>El incumplimiento tiene coste.</strong> Constituye infracción grave o muy grave (LISOS), con multas que pueden superar los 200.000 € en los supuestos más graves, pérdida de ayudas y bonificaciones, y exclusión de la contratación pública. Cumplir bien, además, mejora el clima laboral, la atracción de talento y la reputación.</p></div>
 </section>
@@ -372,7 +373,7 @@ argentina_body = f"""
 <section class="legal-section alt">
   <div class="section-title"><p class="eyebrow">Marco normativo</p><h2>El estándar legal que las organizaciones deben conocer</h2></div>
   <div class="legal-grid">
-    <article class="legal-card"><span class="badge">Vigente desde 2021</span><h3>Convenio 190 OIT</h3><p>Primer tratado internacional sobre violencia y acoso en el mundo del trabajo, ratificado por la Ley 27.580. Alcanza a todos los sectores y modalidades, incluido el teletrabajo.</p><p class="legal-ref">Ley 27.580</p></article>
+    <article class="legal-card"><span class="badge">Vigente desde 2021</span><h3>Convenio 190 OIT</h3><p>Primer tratado internacional sobre violencia y acoso en el mundo del trabajo, ratificado por la Ley 27.580. Alcanza a todos los sectores y modalidades, incluido el teletrabajo.</p><p class="legal-ref">Ley 27.580 · <a href="https://normlex.ilo.org/dyn/nrmlx_es/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:3999810" target="_blank" rel="noopener">Texto oficial (OIT)</a></p></article>
     <article class="legal-card"><span class="badge accent">Protección integral</span><h3>Ley 26.485</h3><p>Reconoce la violencia laboral contra las mujeres como una de las modalidades de violencia de género y habilita vías de protección específicas.</p><p class="legal-ref">Ley 26.485, art. 6</p></article>
     <article class="legal-card"><span class="badge">Responsabilidad</span><h3>Deber de indemnidad</h3><p>El empleador debe garantizar condiciones dignas y seguras de trabajo. La falta de prevención frente a casos de violencia genera responsabilidad y una litigiosidad creciente.</p><p class="legal-ref">LCT, arts. 75 y concs.</p></article>
     <article class="legal-card"><span class="badge accent">Sector público</span><h3>Ley Micaela</h3><p>Capacitación obligatoria en género para los tres poderes del Estado — y una referencia de estándar que el sector privado empieza a adoptar.</p><p class="legal-ref">Ley 27.499</p></article>

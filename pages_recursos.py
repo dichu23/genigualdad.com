@@ -69,6 +69,7 @@ art2 = """
 
 <h2>Qué es y desde cuándo rige</h2>
 <p>Adoptado por la OIT en 2019 junto con la Recomendación 206, el Convenio 190 obliga a los Estados que lo ratifican a exigir medidas de prevención y abordaje de la violencia y el acoso en el trabajo. Argentina lo ratificó mediante la Ley 27.580 y está vigente desde 2021; España lo ratificó en 2022 y está en vigor desde 2023.</p>
+<p><a href="https://normlex.ilo.org/dyn/nrmlx_es/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:3999810" target="_blank" rel="noopener">Texto oficial del Convenio 190 (OIT)</a></p>
 
 <h2>Una definición más amplia que la tradicional</h2>
 <p>El Convenio define la violencia y el acoso como un conjunto de comportamientos y prácticas inaceptables —o sus amenazas— que causen o puedan causar un daño físico, psicológico, sexual o económico. Dos consecuencias prácticas enormes: <strong>no exige repetición</strong> (una conducta única puede configurar violencia) y <strong>no exige intención</strong> (importa el daño, no el propósito declarado).</p>
