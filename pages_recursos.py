@@ -20,7 +20,7 @@ def article_page(slug, tag, title, meta_desc, body_html, reading="6 min"):
 <article class="article-body">
 {body_html}
 <div class="article-footer">
-  <p><strong>¿Necesitás llevar esto a la práctica en tu organización?</strong> Diseñamos protocolos, planes y capacitaciones a medida en Argentina y España.</p>
+  <p><strong>¿Necesitas llevar esto a la práctica en tu organización?</strong> Diseñamos protocolos, planes y capacitaciones a medida en Argentina y España.</p>
   <p style="margin-top:14px"><a class="button primary" href="/contacto">Agendar consulta</a> <a class="button dark" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></p>
 </div>
 </article>"""
@@ -207,7 +207,7 @@ page("recursos/index.html",
 bc_c, bc_c_schema = breadcrumb([("/","Inicio"),(None,"Contacto")])
 sched_block = ""
 if SCHEDULING_LINK:
-    sched_block = f"""<section class="scheduling"><div class="section-title"><p class="eyebrow">Agenda directa</p><h2>Elegí día y horario</h2></div>
+    sched_block = f"""<section class="scheduling"><div class="section-title"><p class="eyebrow">Agenda directa</p><h2>Elige día y horario</h2></div>
 <p style="text-align:center"><a class="button primary" href="{SCHEDULING_LINK}" target="_blank" rel="noopener" data-ga="schedule_click">Abrir agenda de consultas</a></p></section>"""
 else:
     sched_block = "<!-- SCHEDULING: cuando exista el link de Google Calendar/Calendly, definir SCHEDULING_LINK en build.py y regenerar -->"
@@ -226,7 +226,7 @@ contacto_body = f"""
 
 page("contacto.html",
      "Contacto | GEN+ Igualdad — Consulta inicial sin costo",
-     "Agendá una consulta inicial sin compromiso. WhatsApp, teléfono y formulario. Buenos Aires, Argentina · Santiago de Compostela, España.",
+     "Agenda una consulta inicial sin compromiso. WhatsApp, teléfono y formulario. Buenos Aires, Argentina · Santiago de Compostela, España.",
      "/contacto", contacto_body, extra_schema=[bc_c_schema])
 
 print("Recursos + contacto listos.")
