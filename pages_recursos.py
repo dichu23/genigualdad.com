@@ -168,7 +168,7 @@ checklist_body = f"""
 <article class="article-body">
 {checklist_items_html}
 <div class="article-footer">
-  <p><strong>¿Encontraste casillas sin marcar?</strong> Hacemos el diagnóstico, elaboramos el plan y el protocolo, y acompañamos el registro oficial. Primera consulta sin costo.</p>
+  <p><strong>¿Encontraste casillas sin marcar?</strong> Hacemos el diagnóstico, elaboramos el plan y el protocolo, y acompañamos el registro oficial. Primera consulta sin coste.</p>
   <p style="margin-top:14px"><a class="button primary" href="/contacto">Agendar consulta</a> <a class="button dark" href="/descargas/checklist-plan-de-igualdad-genigualdad.pdf" download data-ga="download_checklist">Descargar el checklist en PDF</a></p>
 </div>
 </article>"""
