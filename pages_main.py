@@ -37,7 +37,7 @@ home_body = f"""
 </section>
 
 <section class="summary" id="empresas">
-  <div class="summary-heading"><p class="eyebrow">Especialización real</p><h2>Especialistas donde otros generalizan</h2></div>
+  <div class="summary-heading"><p class="eyebrow">Especialización real</p><h2>Especialistas en construir organizaciones más igualitarias</h2></div>
   <div class="summary-text">
     <p>Gen+ Igualdad nace del trabajo de profesionales que llevan más de 25 años elaborando estadísticas de género en el INDEC, coordinando el Registro Único de Casos de Violencia contra las Mujeres (RUCVM) y capacitando en todo el territorio argentino y en Galicia, España.</p>
     <p>Cada protocolo, plan y taller se diseña a medida: escuchamos la realidad de cada organización antes de proponer una sola medida, y cada propuesta se apoya en evidencia, marco normativo y experiencia territorial.</p>
