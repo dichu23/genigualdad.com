@@ -47,11 +47,11 @@ home_body = f"""
 <section class="why" id="por-que">
   <div class="why-intro">
     <p class="eyebrow">Por qué nos eligen</p>
-    <h2>Cuatro razones por las que las organizaciones confían en Gen+ Igualdad</h2>
+    <h2>Razones por las que las organizaciones confían en Gen+ Igualdad</h2>
     <p>Un recorrido sólido en capacitaciones y talleres de sensibilización sobre violencia de género, con perspectiva y enfoque comunitario, construido en todo el país en el marco del RUCVM.</p>
   </div>
   <div class="why-grid">
-    <article>{IC["check"]}<h3>Resultados que se sostienen</h3><p>Cada intervención se apoya en 25 años de trabajo estadístico, académico y territorial, adaptado a cada organización.</p></article>
+    <article>{IC["check"]}<h3>Experiencia al servicio de la igualdad</h3><p>Cada intervención se apoya en más de dos décadas de trabajo estadístico, académico y territorial, adaptado a cada organización.</p></article>
     <article>{IC["ear"]}<h3>Escuchamos antes de actuar</h3><p>Adaptamos cada propuesta a la realidad de quienes la reciben: el diagnóstico siempre viene antes que la receta.</p></article>
     <article>{IC["chat"]}<h3>Hacemos fácil lo difícil</h3><p>Hablamos claro, conectamos con las personas y generamos impacto real en temas sensibles.</p></article>
     <article>{IC["scale"]}<h3>Respaldo institucional</h3><p>Trayectoria en INDEC, FLACSO, UNTREF, ONU Mujeres y el ámbito jurídico de Argentina y España.</p></article>
