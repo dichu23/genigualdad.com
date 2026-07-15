@@ -94,7 +94,7 @@ home_body = f"""
     </div>
     <div class="flagship-side">
       <h4>Modalidad</h4>
-      <p>15 horas: 5 encuentros sincrónicos de 2 horas + trabajo asincrónico guiado. Presencial, virtual o híbrido.</p>
+      <p>5 encuentros sincrónicos más trabajo asincrónico guiado. Presencial, virtual o híbrido.</p>
       <p>Material propio, análisis de casos y evaluación final grupal.</p>
       <p><a class="button primary" href="/servicios/capacitaciones" style="margin-top:16px">Ver programa completo</a></p>
     </div>
@@ -280,7 +280,7 @@ espana_body = f"""
       <div class="eje-body">
         <ul class="check-list">
           <li>Formación de plantilla, mandos intermedios y RR.HH.</li>
-          <li>Taller insignia: igualdad de género en entornos laborales (15 h)</li>
+          <li>Taller insignia: igualdad de género en entornos laborales</li>
           <li>Prevención del acoso sexual y por razón de sexo</li>
           <li>Formación de RR.HH. en entrevista de denuncia</li>
           <li>Sensibilización en centros educativos, clubes deportivos y entidades sociales</li>

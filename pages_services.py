@@ -75,10 +75,10 @@ service_page(
 service_page(
  "capacitaciones", "Capacitaciones y talleres",
  "Capacitación en igualdad de género y prevención de violencia laboral | GEN+ Igualdad",
- "Talleres teórico-prácticos: igualdad de género en entornos laborales (15 h), prevención de la violencia de género en empresas (12 h) y formación de RR.HH. en entrevista de denuncia.",
+ "Talleres teórico-prácticos: igualdad de género en entornos laborales, prevención de la violencia de género en empresas y formación de RR.HH. en entrevista de denuncia.",
  "Formación teórico-práctica con simulaciones reales, análisis de casos y lenguaje claro. Tres programas probados, adaptables a cada organización, dictados por especialistas con más de 25 años de experiencia.",
- ["<strong>Igualdad de género en entornos laborales</strong> — nuestro taller insignia: 15 horas en 5 encuentros sincrónicos de 2 h más trabajo asincrónico guiado. Sexo-género y estereotipos; acoso sexual y por razón de sexo; planes de igualdad; igualdad retributiva, conciliación y sesgos en la selección; el caso de negocio de la igualdad.",
-  "<strong>Prevención de la violencia de género en las empresas</strong> — 12 horas (8 sincrónicas + 4 asincrónicas) para plantilla, mandos medios y dirección: concepto y normativa, estereotipos y casos reales, indicadores de detección, consecuencias para las personas y la empresa, y acciones de prevención.",
+ ["<strong>Igualdad de género en entornos laborales</strong> — nuestro taller insignia: 5 encuentros sincrónicos más trabajo asincrónico guiado. Sexo-género y estereotipos; acoso sexual y por razón de sexo; planes de igualdad; igualdad retributiva, conciliación y sesgos en la selección; el caso de negocio de la igualdad.",
+  "<strong>Prevención de la violencia de género en las empresas</strong> — formación para plantilla, mandos medios y dirección: concepto y normativa, estereotipos y casos reales, indicadores de detección, consecuencias para las personas y la empresa, y acciones de prevención.",
   "<strong>Formación de RR.HH. en entrevista de denuncia</strong> — jornada intensiva presencial: técnicas de entrevista, detección de inconsistencias, preguntas de profundización, confidencialidad, análisis de casos y simulación de entrevistas.",
   "Sensibilización comunitaria, formación de formadores y charlas para líderes y decisores"],
  "Personal de empresas, mandos medios, dirección, equipos de RR.HH., instituciones públicas y organizaciones sociales. Grupos reducidos o programas escalados para organizaciones grandes.",
