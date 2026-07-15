@@ -354,7 +354,7 @@ argentina_body = f"""
   <div class="page-hero-copy">
     <p class="eyebrow">Empresas y organizaciones en Argentina</p>
     <h1>La violencia laboral es un riesgo real. Prevenirla es una decisión estratégica.</h1>
-    <p class="lead">Desde la vigencia del Convenio 190 de la OIT (Ley 27.580), la prevención de la violencia y el acoso dejó de ser opcional: es un estándar de gestión. Diseñamos protocolos, herramientas de denuncia y capacitaciones con 25 años de reconocida experiencia en la temática.</p>
+    <p class="lead">Desde la vigencia del Convenio 190 de la OIT, ratificado por Argentina mediante la Ley 27.580, la prevención de la violencia y el acoso dejó de ser opcional: es un estándar de gestión. Diseñamos protocolos, herramientas de denuncia y capacitaciones con 25 años de reconocida experiencia en la temática.</p>
     <div class="hero-actions"><a class="button primary" href="/contacto">Agendar consulta</a><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></div>
   </div>
 </section>
