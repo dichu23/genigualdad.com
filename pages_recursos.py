@@ -178,6 +178,12 @@ page("recursos/checklist-plan-de-igualdad.html",
      "Checklist gratuito para empresas en España: plan de igualdad (RD 901/2020), protocolo de acoso, registro retributivo y medidas LGTBI. Con PDF descargable.",
      "/recursos/checklist-plan-de-igualdad", checklist_body, extra_schema=[bc_ck_schema])
 
+# ============================================================ NOTA: /recursos/ley-26485
+# La página recursos/ley-26485.html se mantiene sólo como HTML, no se genera desde acá.
+# Motivo: incluye schema FAQPage y Legislation, y un CTA propio, que article_page() no
+# contempla. build.py no borra archivos existentes, así que regenerar el sitio no la pisa.
+# Si hay que editar su contenido, editar directamente recursos/ley-26485.html.
+
 # ============================================================ RECURSOS INDEX
 bc_r, bc_r_schema = breadcrumb([("/","Inicio"),(None,"Recursos")])
 recursos_body = f"""
@@ -193,6 +199,7 @@ recursos_body = f"""
   <div class="blog-grid">
     <a class="blog-card" href="/recursos/protocolo-de-igualdad-paso-a-paso"><span class="tag">Guía</span><h3>Cómo diseñar un protocolo de igualdad, paso a paso</h3><p>Los 8 componentes que no pueden faltar en un protocolo eficaz: canal de denuncia, procedimiento, garantías y difusión.</p><span class="card-link">Leer guía {IC["arrow"]}</span></a>
     <a class="blog-card" href="/recursos/convenio-190-oit"><span class="tag">Normativa</span><h3>Convenio 190 de la OIT: qué cambia para tu organización</h3><p>El primer tratado internacional sobre violencia y acoso laboral, vigente en Argentina y España, explicado en claro.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
+    <a class="blog-card" href="/recursos/ley-26485"><span class="tag">Normativa · Argentina</span><h3>Ley 26.485: qué significa la violencia laboral para tu organización</h3><p>Qué conductas configuran violencia laboral según el art. 6, cómo se articula con el Convenio 190 y la LCT, y qué debería tener implementado una empresa hoy.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
     <a class="blog-card" href="/recursos/entrevista-de-denuncia"><span class="tag">RR.HH.</span><h3>Cómo conducir una entrevista de denuncia</h3><p>Criterios técnicos para recibir e investigar casos con rigor, cuidado y garantías para todas las partes.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
     <a class="blog-card featured" href="/recursos/checklist-plan-de-igualdad"><span class="tag">Descargable · España</span><h3>Checklist: ¿tu empresa está obligada a tener un plan de igualdad?</h3><p>Obligaciones según el tamaño de tu empresa, documentos que deberías tener al día y señales de alerta. Con PDF.</p><span class="card-link">{IC["download"]} Ver checklist {IC["arrow"]}</span></a>
   </div>

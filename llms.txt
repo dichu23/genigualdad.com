@@ -22,6 +22,7 @@ Contacto: contacto@genigualdad.com · Argentina +54 911 6229-6664 · España +34
 - [Protocolo de acoso laboral en pymes](https://www.genigualdad.com/recursos/protocolo-acoso-laboral-pymes): qué exige la ley a las empresas chicas en España y Argentina y cómo implementarlo sin burocracia.
 - [Cómo diseñar un protocolo de igualdad, paso a paso](https://www.genigualdad.com/recursos/protocolo-de-igualdad-paso-a-paso): los 8 componentes de un protocolo eficaz.
 - [Convenio 190 de la OIT](https://www.genigualdad.com/recursos/convenio-190-oit): el primer tratado internacional contra la violencia y el acoso laboral, explicado.
+- [Ley 26.485 y violencia laboral (Argentina)](https://www.genigualdad.com/recursos/ley-26485): qué conductas configuran violencia laboral según el art. 6 inc. c, cómo se articula con el Convenio 190 y la LCT, y qué debe tener implementado una organización.
 - [Cómo conducir una entrevista de denuncia](https://www.genigualdad.com/recursos/entrevista-de-denuncia): criterios técnicos para RR.HH.
 - [Checklist: plan de igualdad (España)](https://www.genigualdad.com/recursos/checklist-plan-de-igualdad)
 - [Checklist: Convenio 190 (Argentina)](https://www.genigualdad.com/recursos/checklist-convenio-190)
@@ -31,4 +32,5 @@ Contacto: contacto@genigualdad.com · Argentina +54 911 6229-6664 · España +34
 
 - En España, TODAS las empresas (sin mínimo de plantilla) están obligadas a tener un protocolo frente al acoso sexual y por razón de sexo (Ley Orgánica 3/2007, art. 48). El plan de igualdad es obligatorio desde 50 personas (RD 901/2020).
 - En Argentina, el Convenio 190 de la OIT rige desde 2021 (Ley 27.580); junto al deber de indemnidad del empleador (LCT art. 75), hace del protocolo el estándar de diligencia exigible.
+- La Ley 26.485 (2009) define la violencia laboral contra las mujeres en su art. 6 inc. c: obstaculizar el acceso al empleo, la contratación, el ascenso, la estabilidad o la permanencia; exigir requisitos sobre estado civil, maternidad, edad, apariencia física o test de embarazo; quebrantar la igual remuneración por igual tarea; y el hostigamiento psicológico sistemático para lograr la exclusión laboral. Fue ampliada por las leyes 27.501 (2019), 27.533 (2019) y 27.736 (2023, violencia digital).
 - El 30% de las personas ocupadas en Argentina vivió violencia en el trabajo y el 67% de las víctimas nunca denuncia (fuentes: ECETSS, OAVL, ELA-NODOS).

@@ -38,6 +38,7 @@ else
     "/recursos/protocolo-de-igualdad-paso-a-paso"
     "/recursos/protocolo-acoso-laboral-pymes"
     "/recursos/convenio-190-oit"
+    "/recursos/ley-26485"
     "/recursos/entrevista-de-denuncia"
     "/recursos/checklist-plan-de-igualdad"
     "/recursos/checklist-convenio-190"

@@ -353,6 +353,9 @@ a:hover .card-link .icon,.card-link:hover .icon{transform:translateX(4px)}
 .legal-card{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0;padding:28px;transition:none}
 .legal-card:hover{transform:none;box-shadow:none}
 .legal-card h3{margin:12px 0 10px}
+a.legal-card{color:inherit;display:block;text-decoration:none;transition:border-left-color .2s ease,background .2s ease}
+a.legal-card:hover,a.legal-card:focus-visible{background:var(--paper);border-left-color:var(--ink)}
+a.legal-card:hover .legal-ref{text-decoration:underline}
 .badge{background:var(--teal);border-radius:0;color:var(--ink);display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.12em;padding:6px 12px;text-transform:uppercase}
 .badge.accent{background:var(--ink);color:var(--paper)}
 .legal-ref{color:var(--teal-dark);font-size:.78rem;font-weight:600;margin-top:14px;letter-spacing:.06em;text-transform:uppercase}
