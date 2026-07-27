@@ -24,7 +24,7 @@ def service_page(slug, name, meta_title, meta_desc, hero_lead, incluye, para_qui
     <div>
       <h2>Qué incluye</h2>
       <ul class="check-list">{inc}</ul>
-      <h2 style="margin-top:40px">Para quién</h2>
+      <h2 style="margin-top:40px">Para quienes</h2>
       <p>{para_quien}</p>
       {extra}
     </div>
@@ -89,7 +89,7 @@ service_page(
  "servicios-2", "Taller de capacitación en igualdad de género",
  rel(("/servicios/protocolos-de-igualdad","Protocolos de igualdad"),("/recursos/entrevista-de-denuncia","Artículo: la entrevista de denuncia")),
  extra="""<h2 style="margin-top:40px">Modalidades</h2>
- <p><strong>Presencial:</strong> interacción auténtica, simulaciones reales, lenguaje no verbal y feedback inmediato — la que recomendamos para temas sensibles. <strong>Virtual:</strong> encuentros en vivo accesibles desde cualquier punto del país. <strong>Híbrida:</strong> jornadas presenciales clave con seguimiento virtual, equilibrando profundidad y alcance.</p>""")
+ <p><strong>Presencial:</strong> interacción auténtica, simulaciones reales, lenguaje no verbal y feedback inmediato (recomendada para temáticas sensibles). <strong>Virtual:</strong> encuentros en vivo accesibles desde cualquier punto del país. <strong>Híbrida:</strong> jornadas presenciales clave con seguimiento virtual, equilibrando profundidad y alcance.</p>""")
 
 # --- 3. Diagnósticos y planes ---
 service_page(
