@@ -8,7 +8,7 @@ home_body = f"""
   <div class="hero-copy">
     <p class="eyebrow">Consultoría en género · Argentina y España</p>
     <h1>Impulsamos organizaciones más igualitarias, sostenibles y competitivas</h1>
-    <p class="lead">Protocolos frente al acoso, planes de igualdad, diagnósticos y capacitación con más de 25 años de reconocida experiencia en la temática: el mismo rigor que aplicamos en el INDEC, la FLACSO y el territorio, al servicio de empresas e instituciones.</p>
+    <p class="lead">Elaboramos protocolos frente al acoso y la violencia laboral, planes de igualdad y diagnósticos, y dictamos capacitaciones. Contamos con más de 25 años de reconocida experiencia en la temática: el mismo rigor que aplicamos en el INDEC, la FLACSO y el territorio, al servicio de empresas e instituciones.</p>
     <div class="hero-actions"><a class="button primary" href="/contacto">Agendar consulta</a><a class="button ghost" href="{WA_LINK}" target="_blank" rel="noopener" data-ga="contact_whatsapp">WhatsApp directo</a></div>
     <div class="trust-strip"><span>INDEC</span><span>FLACSO</span><span>UNTREF</span><span>ONU Mujeres</span><span>RUCVM</span><span>USC Galicia</span></div>
   </div>
