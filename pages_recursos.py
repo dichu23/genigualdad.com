@@ -131,6 +131,7 @@ checklist_items_html = """
 <li><strong>¿Tenéis 50 o más personas en plantilla?</strong> → Plan de igualdad obligatorio, negociado y registrado (RD 901/2020) + medidas planificadas LGTBI con protocolo específico (Ley 4/2023, RD 1026/2024).</li>
 <li><strong>¿Vuestro convenio colectivo exige plan de igualdad?</strong> → Es obligatorio aunque tengáis menos de 50 personas.</li>
 <li><strong>¿Tenéis al menos 1 persona empleada?</strong> → Protocolo frente al acoso sexual y por razón de sexo (LO 3/2007, art. 48) y registro retributivo desagregado por sexo (RD 902/2020): obligatorios para todas las empresas.</li>
+<li><strong>Novedad 2026:</strong> el plazo para transponer la <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32023L0970" target="_blank" rel="noopener">Directiva (UE) 2023/970</a> de transparencia retributiva venció el 7 de junio de 2026 y España está tramitando la norma. Anticipa nuevas obligaciones sobre información salarial en la selección, criterios de progresión retributiva y evaluación conjunta cuando la brecha supere el 5% sin justificación. Conviene tener el registro retributivo en orden antes de que entre en vigor.</li>
 <li><strong>¿Tenéis plan de igualdad vigente?</strong> → Auditoría retributiva obligatoria como parte del diagnóstico.</li>
 </ul>
 
@@ -178,8 +179,9 @@ page("recursos/checklist-plan-de-igualdad.html",
      "Checklist gratuito para empresas en España: plan de igualdad (RD 901/2020), protocolo de acoso, registro retributivo y medidas LGTBI. Con PDF descargable.",
      "/recursos/checklist-plan-de-igualdad", checklist_body, extra_schema=[bc_ck_schema])
 
-# ============================================================ NOTA: /recursos/ley-26485
-# La página recursos/ley-26485.html se mantiene sólo como HTML, no se genera desde acá.
+# ============================================================ NOTA: páginas sólo-HTML
+# recursos/ley-26485.html, recursos/deber-de-seguridad-lct-75.html y recursos/ley-micaela.html
+# se mantienen sólo como HTML, no se generan desde acá.
 # Motivo: incluye schema FAQPage y Legislation, y un CTA propio, que article_page() no
 # contempla. build.py no borra archivos existentes, así que regenerar el sitio no la pisa.
 # Si hay que editar su contenido, editar directamente recursos/ley-26485.html.
@@ -200,6 +202,8 @@ recursos_body = f"""
     <a class="blog-card" href="/recursos/protocolo-de-igualdad-paso-a-paso"><span class="tag">Guía</span><h3>Cómo diseñar un protocolo de igualdad, paso a paso</h3><p>Los 8 componentes que no pueden faltar en un protocolo eficaz: canal de denuncia, procedimiento, garantías y difusión.</p><span class="card-link">Leer guía {IC["arrow"]}</span></a>
     <a class="blog-card" href="/recursos/convenio-190-oit"><span class="tag">Normativa</span><h3>Convenio 190 de la OIT: qué cambia para tu organización</h3><p>El primer tratado internacional sobre violencia y acoso laboral, vigente en Argentina y España, explicado en claro.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
     <a class="blog-card" href="/recursos/ley-26485"><span class="tag">Normativa · Argentina</span><h3>Ley 26.485: qué significa la violencia laboral para tu organización</h3><p>Qué conductas configuran violencia laboral según el art. 6, cómo se articula con el Convenio 190 y la LCT, y qué debería tener implementado una empresa hoy.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
+    <a class="blog-card" href="/recursos/deber-de-seguridad-lct-75"><span class="tag">Normativa · Argentina</span><h3>Deber de seguridad: qué obliga el art. 75 de la LCT</h3><p>La norma más antigua y menos leída del marco argentino: por qué alcanza a la violencia laboral y qué debe poder demostrar una organización.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
+    <a class="blog-card" href="/recursos/ley-micaela"><span class="tag">Normativa · Argentina</span><h3>Ley Micaela: qué exige la capacitación obligatoria en género</h3><p>A quiénes alcanza, cómo se acredita, qué pasa si alguien se niega y por qué es el estándar con el que se mide cualquier plan de capacitación.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
     <a class="blog-card" href="/recursos/entrevista-de-denuncia"><span class="tag">RR.HH.</span><h3>Cómo conducir una entrevista de denuncia</h3><p>Criterios técnicos para recibir e investigar casos con rigor, cuidado y garantías para todas las partes.</p><span class="card-link">Leer artículo {IC["arrow"]}</span></a>
     <a class="blog-card featured" href="/recursos/checklist-plan-de-igualdad"><span class="tag">Descargable · España</span><h3>Checklist: ¿tu empresa está obligada a tener un plan de igualdad?</h3><p>Obligaciones según el tamaño de tu empresa, documentos que deberías tener al día y señales de alerta. Con PDF.</p><span class="card-link">{IC["download"]} Ver checklist {IC["arrow"]}</span></a>
   </div>

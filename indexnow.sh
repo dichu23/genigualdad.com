@@ -39,6 +39,8 @@ else
     "/recursos/protocolo-acoso-laboral-pymes"
     "/recursos/convenio-190-oit"
     "/recursos/ley-26485"
+    "/recursos/deber-de-seguridad-lct-75"
+    "/recursos/ley-micaela"
     "/recursos/entrevista-de-denuncia"
     "/recursos/checklist-plan-de-igualdad"
     "/recursos/checklist-convenio-190"
