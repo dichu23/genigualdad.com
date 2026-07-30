@@ -2,7 +2,7 @@
 # IndexNow — avisa a Bing/Copilot que cambiaron páginas de genigualdad.com
 #
 # Uso:
-#   ./indexnow.sh                                   -> envía las 18 URLs del sitemap
+#   ./indexnow.sh                                   -> envía todas las URLs del sitemap
 #   ./indexnow.sh /contacto /recursos/calculadora-brecha-salarial   -> envía sólo esas
 #
 # Requisito: que https://www.genigualdad.com/26ab7c66fd1bc219966c52cb3a054cff.txt
@@ -45,6 +45,7 @@ else
     "/recursos/checklist-plan-de-igualdad"
     "/recursos/checklist-convenio-190"
     "/recursos/calculadora-brecha-salarial"
+    "/recursos/mapa-ley-micaela-provincias"
     "/contacto"
   )
 fi
