@@ -38,6 +38,7 @@
   .mic-cell[aria-pressed=true]{box-shadow:0 0 0 2px #1f1f1d}
   .mic-y19{background:#c0dd97;color:#173404}
   .mic-y20{background:#fac775;color:#412402}
+  .mic-propio{background:#1d9e75;color:#fff}
   .mic-panel{flex:1 1 280px;min-width:260px;background:#fff;border:1px solid #e4e1d9;border-radius:12px;padding:18px 20px}
   .mic-panel h3{margin:0 0 2px;font-size:19px}
   .mic-panel .mic-norma{font-size:15px;font-weight:600;margin:8px 0 2px}
@@ -344,14 +345,14 @@ function render(i){
     +'<p class="mic-nota">'+td[3].innerHTML+'</p>';
 }
 rows.forEach(function(tr,i){
-  var anio=tr.getAttribute('data-anio');
+  var anio=tr.getAttribute('data-anio'),propio=tr.getAttribute('data-propio')==='1';
   var b=document.createElement('button');
   b.type='button';
-  b.className='mic-cell '+(anio==='2019'?'mic-y19':'mic-y20');
+  b.className='mic-cell '+(propio?'mic-propio':(anio==='2019'?'mic-y19':'mic-y20'));
   b.style.gridRow=tr.getAttribute('data-row');
   b.style.gridColumn=tr.getAttribute('data-col');
   b.setAttribute('aria-pressed','false');
-  b.setAttribute('aria-label',tr.cells[0].textContent+', adhirió en '+anio);
+  b.setAttribute('aria-label',tr.cells[0].textContent+', adhirió en '+anio+(propio?', norma con alcance propio':''));
   b.innerHTML=tr.getAttribute('data-sigla')+'<small>'+anio+'</small>';
   b.addEventListener('click',function(){render(i);if(window.gtag)gtag('event','mapa_micaela_provincia',{provincia:tr.cells[0].textContent});});
   map.appendChild(b);cells.push(b);
