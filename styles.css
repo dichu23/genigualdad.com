@@ -489,3 +489,18 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
   .eje-item summary{gap:14px;padding:20px 44px 20px 0}
   .eje-body{padding-left:0}
 }
+
+/* ---- Selector de idioma ES/EN ---- */
+.lang-switch{border:1px solid var(--line);border-radius:0;color:#40365a;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.1em;line-height:1;padding:11px 13px;text-transform:uppercase;transition:border-color .2s ease,color .2s ease,background .2s ease;white-space:nowrap}
+.lang-switch:hover{background:transparent;border-color:var(--ink);color:var(--ink);transform:none;box-shadow:none}
+.header-mobile{align-items:center;display:flex;gap:14px}
+.header-mobile .lang-switch{display:none}
+.mobile-menu .lang-switch{border:0;font-size:.95rem;font-family:var(--sans);letter-spacing:.04em;text-transform:none}
+@media (max-width:1150px){
+  .nav-wrap .lang-switch{display:none}
+  .header-mobile .lang-switch{display:inline-block}
+}
+@media (max-width:560px){
+  .header-mobile{gap:10px}
+  .lang-switch{font-size:.68rem;padding:9px 10px}
+}
