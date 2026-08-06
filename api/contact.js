@@ -190,8 +190,12 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { nombre, email, telefono, pais, mensaje, empresa_web, copiaAlLead, datos } =
+  const { nombre, email, telefono, pais, mensaje, empresa_web, copiaAlLead, datos, idioma } =
     req.body || {};
+
+  // El formulario de /en manda idioma:"en". Sirve para avisar en el mail interno
+  // que hay que responder en inglés.
+  const esIngles = idioma === "en";
 
   // Honeypot: si el campo oculto viene completo, es un bot
   if (empresa_web) {
@@ -212,14 +216,15 @@ export default async function handler(req, res) {
     from: "Gen+ Igualdad <contacto@genigualdad.com>",
     to: ["larod63@gmail.com", "genigualdad@gmail.com"],
     reply_to: email,
-    subject: `Consulta web de ${clean(nombre)}${pais ? " · " + clean(pais) : ""}`,
+    subject: `${esIngles ? "[EN] " : ""}Consulta web de ${clean(nombre)}${pais ? " · " + clean(pais) : ""}`,
     html: `
       <img src="https://www.genigualdad.com/img/logo-horizontal.png" alt="GEN+ Igualdad" width="200" style="width:200px;max-width:55%;height:auto;margin-bottom:14px">
+      ${esIngles ? `<p style="background:#221c2e;color:#faf8f4;padding:12px 16px;font-weight:600;font-size:15px;margin:0 0 16px">Consulta en INGLÉS — llegó desde la versión /en del sitio. Respondé en inglés.</p>` : ""}
       <h2 style="color:#2d1b4e">Nueva consulta desde genigualdad.com</h2>
       <p><strong>Nombre:</strong> ${clean(nombre)}</p>
       <p><strong>Email:</strong> ${clean(email)}</p>
       <p><strong>Teléfono:</strong> ${clean(telefono) || "—"}</p>
-      <p><strong>País:</strong> ${clean(pais) || "—"}</p>
+      <p><strong>${esIngles ? "Equipos en" : "País"}:</strong> ${clean(pais) || "—"}</p>
       <p><strong>Mensaje:</strong></p>
       <p style="background:#f8f5ff;border-left:4px solid #5bc4bf;padding:14px;white-space:pre-wrap">${clean(mensaje)}</p>
       <p style="color:#888;font-size:12px">Podés responder directamente a este email: la respuesta le llegará a ${clean(email)}.</p>

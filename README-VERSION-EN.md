@@ -78,6 +78,21 @@ en los `.py`.
    sentidos. Vercel tiene `cleanUrls`, así que `/en/services/training` resuelve solo.
 3. Correr el ping de IndexNow con las 8 URLs nuevas.
 4. En Search Console, verificar que no aparezcan errores de hreflang a los pocos días.
-5. El formulario de `/en/contact` postea al mismo `/api/contact` y manda `idioma: "en"` en
-   el payload. Si querés que el mail de respuesta automática salga en inglés, hay que
-   tocar `api/contact.js` — hoy responde siempre en español.
+## El formulario en inglés y los emails
+
+El formulario de `/en` postea al mismo `/api/contact` y manda `idioma: "en"` en el payload.
+El endpoint lo usa para marcar el **aviso interno** que llega a `larod63@` y `genigualdad@`:
+
+- el asunto se prefija con `[EN]`;
+- arriba del cuerpo aparece una banda oscura que dice que la consulta llegó en inglés y hay
+  que responder en inglés;
+- el campo "País" pasa a llamarse "Equipos en", que es lo que pregunta el formulario inglés.
+
+Con cualquier otro valor de `idioma` (o sin el campo), el mail sale exactamente como salía
+antes. El flujo en español no cambió en nada.
+
+**Ojo con una confusión fácil:** quien completa el formulario de contacto no recibe ningún
+mail automático, ni en español ni en inglés. El único mail al lead lo dispara la
+calculadora de brecha salarial, que manda el informe y viaja con `copiaAlLead: true`. Si en
+algún momento se quiere sumar un acuse de recibo para quien consulta, es una función nueva,
+no un ajuste de idioma.
