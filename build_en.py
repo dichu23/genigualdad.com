@@ -284,8 +284,8 @@ def build_home():
 <section class="hero" id="top">
   <div class="hero-copy">
     <p class="eyebrow">Gender equality consultancy &#183; Argentina &amp; Spain</p>
-    <h1>Your equality policy has to be local to count</h1>
-    <p class="lead">If your company employs people in Argentina or Spain, your US anti-harassment and EEO policies do not travel. Both countries require their own protocols, their own reporting channels and, in Spain, a negotiated and officially registered equality plan. We build them, train the local teams who will use them, and report back to headquarters in English.</p>
+    <h1>Equality compliance for your teams in Argentina and Spain</h1>
+    <p class="lead">If your company employs people in Argentina or Spain, the anti-harassment and EEO policies drafted at head office don't carry over. Both countries require their own protocols, their own reporting channels and, in Spain, a negotiated and officially registered equality plan. We build them, train the local teams who will use them, and report back to headquarters in English.</p>
     <div class="hero-actions"><a class="button primary" href="/en/contact">Book a consultation</a><a class="button ghost" href="{wa(label)}" target="_blank" rel="noopener" data-ga="contact_whatsapp">Message us on WhatsApp</a></div>
     <div class="trust-strip"><span>INDEC</span><span>FLACSO</span><span>UNTREF</span><span>UN Women</span><span>RUCVM</span><span>USC Galicia</span></div>
   </div>
