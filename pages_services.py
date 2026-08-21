@@ -114,8 +114,8 @@ service_page(
 # --- 4. Asesoría jurídica ---
 service_page(
  "asesoria-juridica", "Asesoría jurídica con perspectiva de género",
- "Asesoría jurídica en igualdad y violencia laboral | GEN+ Igualdad",
- "Asesoramiento legal con perspectiva de género para organizaciones y personas: adecuación normativa en Argentina y España, acompañamiento de casos y diseño de políticas internas.",
+ "Asesoría jurídica con perspectiva de género (AR y ES)",
+ "Asesoramiento legal con perspectiva de género en Argentina y España: adecuación normativa, acompañamiento de casos de violencia y acoso, y diseño de políticas internas.",
  "El derecho es la columna vertebral de cualquier política de igualdad. Nuestro equipo jurídico, con formación en Argentina y España, traduce la norma en procedimientos que protegen a las personas y a la organización.",
  ["Adecuación normativa integral: revisión de políticas, reglamentos y procedimientos frente al marco legal aplicable",
   "Asesoramiento en la gestión de casos de violencia, discriminación y acoso, resguardando los derechos de todas las partes",
