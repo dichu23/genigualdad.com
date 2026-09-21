@@ -207,8 +207,8 @@ home_body = f"""
 """ + contact_section()
 
 page("index.html",
-     "GEN+ Igualdad | Protocolos, planes de igualdad y capacitación en Argentina y España",
-     "Consultora especializada en violencia laboral, protocolos y planes de igualdad y capacitación en género. Más de 25 años de reconocida experiencia en la temática en Argentina y España.",
+     "Consultora de igualdad de género | Argentina y España | GEN+",
+     "Protocolos frente al acoso, planes de igualdad, diagnósticos y capacitación en género. Más de 25 años de experiencia en Argentina y España.",
      "/", home_body, hreflang=True)
 
 # ============================================================ ESPAÑA
