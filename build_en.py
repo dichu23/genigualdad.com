@@ -31,8 +31,10 @@ EN2ES = {en: es for es, en in PAIRS}
 
 
 def wa(page_label):
-    txt = ("Hello,%20I%27d%20like%20to%20ask%20about%20Gen%2B%20Igualdad%27s%20services."
-           "%20I%20came%20from%20the%20page:%20" + page_label.replace(" ", "%20"))
+    lbl = {"Home": "home page", "Service Legal": "Legal advisory", "Service Research": "Social research"}.get(
+        page_label, page_label.removeprefix("Service "))
+    txt = ("Hi,%20I%27m%20coming%20from%20the%20Gen%2B%20Igualdad%20website%20("
+           + lbl.replace(" ", "%20") + ").%20I%27d%20like%20to%20ask%20about:%20")
     return f"https://wa.me/{WA_NUM}?text={txt}"
 
 
