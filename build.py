@@ -4,7 +4,7 @@ import os, json
 
 BASE = "https://www.genigualdad.com"
 WA_NUM = "5491162296664"
-WA_TEXT = "Hola,%20vengo%20de%20la%20web%20de%20Gen+%20Igualdad.%20Quer%C3%ADa%20consultar%20sobre:%20"
+WA_TEXT = "Hola,%20vengo%20de%20la%20web%20de%20Gen%2B%20Igualdad.%20Quer%C3%ADa%20consultar%20sobre:%20"
 WA_LINK = f"https://wa.me/{WA_NUM}?text={WA_TEXT}"
 EMAIL = "contacto@genigualdad.com"
 TODAY = "2026-07-05"
