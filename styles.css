@@ -504,3 +504,8 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
   .header-mobile{gap:10px}
   .lang-switch{font-size:.68rem;padding:9px 10px}
 }
+
+/* Enlaces dentro del texto: visibles (antes heredaban color y sin subrayado) */
+.article-body p a:not(.button),.article-body li a:not(.button),.service-detail p a:not(.button),.service-detail li a:not(.button){color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal-dark);text-underline-offset:3px;text-decoration-thickness:2px}
+.article-body p a:not(.button):hover,.article-body li a:not(.button):hover,.service-detail p a:not(.button):hover,.service-detail li a:not(.button):hover{color:var(--teal-dark)}
+.related-guides li a{font-weight:600}
