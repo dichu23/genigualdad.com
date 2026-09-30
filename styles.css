@@ -511,10 +511,20 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
 .related-guides li a{font-weight:600}
 
 /* Resumen al inicio de las guías (ayuda a lectores y a buscadores/IA a extraer la respuesta) */
-.key-facts{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--teal-dark);margin:28px 0 8px;padding:22px 26px}
+.key-facts{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--teal-dark);margin:28px auto 8px;padding:22px 26px}
 .key-facts-title{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--ink);margin:0 0 10px}
 .key-facts ul{list-style:none;display:grid;gap:10px;margin:0;padding:0}
 .key-facts li{color:var(--muted);line-height:1.6;padding-left:24px;position:relative}
 .key-facts li::before{content:"—";position:absolute;left:0;color:var(--teal-dark)}
 .key-facts li strong{color:var(--ink)}
 .key-facts-date{font-size:.82rem;color:var(--muted);margin:14px 0 0}
+
+/* Tablas de datos dentro de las guías */
+.data-tablewrap{overflow-x:auto;margin:18px auto 8px;-webkit-overflow-scrolling:touch}
+.data-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.data-table caption{caption-side:bottom;text-align:left;font-size:.82rem;color:var(--muted);padding-top:10px;line-height:1.5}
+.data-table th,.data-table td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.data-table thead th{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#40365a}
+.data-table tbody th{font-weight:600;color:var(--ink)}
+.data-table td{color:var(--muted)}
+.data-table caption a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal-dark)}
