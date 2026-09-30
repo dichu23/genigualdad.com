@@ -509,3 +509,12 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
 .article-body p a:not(.button),.article-body li a:not(.button),.service-detail p a:not(.button),.service-detail li a:not(.button){color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal-dark);text-underline-offset:3px;text-decoration-thickness:2px}
 .article-body p a:not(.button):hover,.article-body li a:not(.button):hover,.service-detail p a:not(.button):hover,.service-detail li a:not(.button):hover{color:var(--teal-dark)}
 .related-guides li a{font-weight:600}
+
+/* Resumen al inicio de las guías (ayuda a lectores y a buscadores/IA a extraer la respuesta) */
+.key-facts{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--teal-dark);margin:28px 0 8px;padding:22px 26px}
+.key-facts-title{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--ink);margin:0 0 10px}
+.key-facts ul{list-style:none;display:grid;gap:10px;margin:0;padding:0}
+.key-facts li{color:var(--muted);line-height:1.6;padding-left:24px;position:relative}
+.key-facts li::before{content:"—";position:absolute;left:0;color:var(--teal-dark)}
+.key-facts li strong{color:var(--ink)}
+.key-facts-date{font-size:.82rem;color:var(--muted);margin:14px 0 0}
