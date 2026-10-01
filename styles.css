@@ -528,3 +528,7 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
 .data-table tbody th{font-weight:600;color:var(--ink)}
 .data-table td{color:var(--muted)}
 .data-table caption a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal-dark)}
+
+/* Enlaces dentro de recuadros oscuros (.notice) en artículos */
+.article-body .notice p a:not(.button){color:var(--teal);text-decoration-color:var(--teal)}
+.article-body .notice p a:not(.button):hover{color:#7ad2ce}
