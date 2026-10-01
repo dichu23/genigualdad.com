@@ -532,3 +532,7 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
 /* Enlaces dentro de recuadros oscuros (.notice) en artículos */
 .article-body .notice p a:not(.button){color:var(--teal);text-decoration-color:var(--teal)}
 .article-body .notice p a:not(.button):hover{color:#7ad2ce}
+
+/* Preguntas frecuentes y subtítulos dentro de artículos: separarlos del párrafo anterior */
+.article-body h3{margin:30px auto 0}
+.article-body h2+h3{margin-top:14px}
