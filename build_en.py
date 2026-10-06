@@ -421,7 +421,7 @@ def build_home():
   <div class="timeline">
     <div class="timeline-item"><div class="timeline-dot">1</div><h3>2000 &#8212; 2015</h3><p>Producing and analysing gender statistics at INDEC, Argentina's national statistics institute.</p></div>
     <div class="timeline-item"><div class="timeline-dot">2</div><h3>2015 &#8212; 2020</h3><p>Delivering statistical literacy workshops in universities and secondary schools.</p></div>
-    <div class="timeline-item"><div class="timeline-dot">3</div><h3>2020 &#8212; 2025</h3><p>Training public officials, community leaders, NGOs and local communities across every Argentine province.</p></div>
+    <div class="timeline-item"><div class="timeline-dot">3</div><h3>2020 &#8212; 2024</h3><p>Training public officials, community leaders, NGOs and local communities across every Argentine province.</p></div>
     <div class="timeline-item"><div class="timeline-dot">4</div><h3>2024 +</h3><p>Founding GEN+ Igualdad: protocols, equality plans, assessments and violence prevention in Argentina and Spain.</p></div>
   </div>
 </section>
