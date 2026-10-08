@@ -528,7 +528,7 @@ SERVICES = [
         desc="Practical training on equality, harassment prevention and complaint intake interviews, delivered in Spanish to local teams by specialists with 25+ years of experience.",
         h1="Training and workshops",
         lead="Practical, case-based training with real simulations and plain language. Three proven programmes, adapted to each organisation, delivered by specialists with more than 25 years of experience. Sessions run in Spanish, because that is what makes them land with local teams.",
-        img=("/img/servicios-2.webp", "Gender equality training workshop", 500, 338),
+        img=("/img/territorio-capacitacion.webp", "A GEN+ Igualdad training session with a group of participants", 1000, 667),
         includes=[
             "<strong>Gender equality in the workplace</strong> &#8212; our flagship programme: five live sessions plus guided asynchronous work. Sex, gender and stereotypes; everyday sexism and respectful communication; new models of masculinity; sexual harassment and harassment on grounds of sex; empathy, active listening and early identification of conflict; equality plans; pay equity, work-life balance and bias in hiring; the business case for equality; commitments and an action plan.",
             "<strong>Preventing gender-based violence in the workplace</strong> &#8212; for staff, middle management and leadership: concepts and law, stereotypes and real cases, warning signs, consequences for people and for the business, and preventive measures.",

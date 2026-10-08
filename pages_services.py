@@ -86,7 +86,7 @@ service_page(
   "Ejercicios prácticos, casos y role playing",
   "Informe de evaluación final grupal, confidencial",
   "Certificado de participación"],
- "servicios-2", "Taller de capacitación en igualdad de género",
+ "territorio-capacitacion", "Capacitación de Gen+ Igualdad ante un grupo de participantes",
  rel(("/servicios/protocolos-de-igualdad","Protocolos de igualdad"),("/recursos/entrevista-de-denuncia","Artículo: la entrevista de denuncia")),
  extra="""<h2 style="margin-top:40px">Modalidades</h2>
  <p><strong>Presencial:</strong> interacción auténtica, simulaciones reales, lenguaje no verbal y feedback inmediato (recomendada para temáticas sensibles). <strong>Virtual:</strong> encuentros en vivo accesibles desde cualquier punto del país. <strong>Híbrida:</strong> jornadas presenciales clave con seguimiento virtual, equilibrando profundidad y alcance.</p>""")
