@@ -178,7 +178,7 @@ home_body = f"""
     <div class="gallery-item">{img("territorio-indec","Curso para nivel secundario junto al INDEC")}</div>
     <div class="gallery-item">{img("territorio-amanecer","Jornada de capacitación territorial")}</div>
     <div class="gallery-item">{img("territorio-cimdip","Capacitación junto al CIMDIP")}</div>
-    <div class="gallery-item">{img("genmas-1","Actividad de formación de Gen+ Igualdad")}</div>
+    <div class="gallery-item">{img("territorio-capacitacion","Capacitación de Gen+ Igualdad ante un grupo de participantes")}</div>
   </div>
   <p style="margin-top:28px;max-width:760px">Por acuerdos de confidencialidad, no publicamos el detalle de las organizaciones privadas con las que trabajamos. Con gusto compartimos referencias en la consulta inicial.</p>
 </section>
