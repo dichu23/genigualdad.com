@@ -554,3 +554,6 @@ footer ul a{display:inline-block;padding:7px 0}
 .contact-locations p{margin-top:0}
 @media (max-width:860px){.hero-image{margin:0 calc(-1 * max(5vw,20px))}.hero-image figcaption{left:max(5vw,20px)}}
 @media (max-width:560px){.hero-image{margin:0 calc(-1 * max(4vw,16px))}.hero-image figcaption{left:max(4vw,16px);max-width:calc(100% - 2 * max(4vw,16px))}}
+
+/* Razones sin iconos: una regla teal corta, el recurso propio de la marca */
+.why-grid article::before{content:"";display:block;width:40px;height:3px;background:var(--teal);margin-bottom:22px}
