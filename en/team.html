@@ -35,9 +35,9 @@
     <a class="lang-switch" href="/equipo" hreflang="es" lang="es" aria-label="Ver esta p&#225;gina en espa&#241;ol" data-ga="lang_switch_es">ES</a>
     <a class="nav-cta" href="/en/contact">Book a consultation</a>
   </div>
-  <div class="header-mobile"><a class="lang-switch" href="/equipo" hreflang="es" lang="es" aria-label="Ver esta p&#225;gina en espa&#241;ol" data-ga="lang_switch_es">ES</a><button class="menu-button" type="button" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  <div class="header-mobile"><a class="lang-switch" href="/equipo" hreflang="es" lang="es" aria-label="Ver esta p&#225;gina en espa&#241;ol" data-ga="lang_switch_es">ES</a><button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu-movil"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
 </header>
-<div class="mobile-menu">
+<div class="mobile-menu" id="menu-movil">
   <button class="close-menu" type="button" aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   <a href="/en#services">Services</a><a href="/en#markets">Argentina &amp; Spain</a><a href="/en/team">Team</a><a href="/en/contact">Contact</a>
   <a class="button primary nav-cta" href="/en/contact">Book a consultation</a>
@@ -91,15 +91,15 @@
       <p>Gender, diversity and inclusion consultancy. Training, research and advisory services in Argentina and Spain.</p>
     </div>
     <div>
-      <h4>Services</h4>
+      <h2>Services</h2>
       <ul><li><a href="/en/services/equality-protocols">Equality protocols</a></li><li><a href="/en/services/training">Training</a></li><li><a href="/en/services/assessments-and-equality-plans">Assessments &amp; equality plans</a></li><li><a href="/en/services/legal-advisory">Legal advisory</a></li><li><a href="/en/services/social-research">Social research</a></li></ul>
     </div>
     <div>
-      <h4>Company</h4>
+      <h2>Company</h2>
       <ul><li><a href="/en/team">Our team</a></li><li><a href="/en#markets">Argentina &amp; Spain</a></li><li><a href="/en/contact">Contact</a></li><li><a href="/" hreflang="es" lang="es">Sitio en espa&#241;ol</a></li></ul>
     </div>
     <div>
-      <h4>Contact</h4>
+      <h2>Contact</h2>
       <ul><li><a href="mailto:contacto@genigualdad.com">contacto@genigualdad.com</a></li><li><a href="tel:+5491162296664">+54 911 6229-6664</a></li><li><a href="tel:+34698187971">+34 698 187 971</a></li><li><a class="button primary" href="/en/contact" style="margin-top:8px">Book a consultation</a></li></ul>
     </div>
   </div>
@@ -111,9 +111,9 @@
 <script>
 (function(){
 var mb=document.querySelector('.menu-button'),cm=document.querySelector('.close-menu'),mm=document.querySelector('.mobile-menu');
-if(mb&&mm){mb.addEventListener('click',function(){mm.classList.add('active')});
-if(cm)cm.addEventListener('click',function(){mm.classList.remove('active')});
-document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',function(){mm.classList.remove('active')})});}
+if(mb&&mm){var openM=function(){mm.classList.add('active');mb.setAttribute('aria-expanded','true');if(cm)cm.focus()};var closeM=function(back){mm.classList.remove('active');mb.setAttribute('aria-expanded','false');if(back)mb.focus()};
+mb.addEventListener('click',openM);if(cm)cm.addEventListener('click',function(){closeM(true)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mm.classList.contains('active'))closeM(true)});
+document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',function(){closeM(false)})});}
 document.querySelectorAll('[data-ga]').forEach(function(el){el.addEventListener('click',function(){if(window.gtag)gtag('event',el.getAttribute('data-ga'));})});
 var sel='.section-title, .why-grid, .about-copy, .about-image, .team-grid, .pillars, .flagship, .timeline, .impact-columns, .institutions-strip, .gallery, .process-grid, .contact-form, .contact-copy, .summary-text, .summary-heading, .country-cards, .faq, .service-cards, .cta-band-inner, .article-body, .bio';
 var t=document.querySelectorAll(sel);t.forEach(function(e){e.classList.add('reveal')});
@@ -125,10 +125,10 @@ if(document.getElementById('empresa_web').value){return;}
 var p={nombre:document.getElementById('nombre').value,email:document.getElementById('email').value,telefono:document.getElementById('telefono').value,pais:document.getElementById('pais')?document.getElementById('pais').value:'',mensaje:document.getElementById('mensaje').value,idioma:'en'};
 var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending\u2026';
 try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
-if(r.ok){mc.innerHTML='<p class="success">Thank you, '+p.nombre+'. We will get back to you shortly.</p>';f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
-else{mc.innerHTML='<p class="error">Something went wrong. Please email us at contacto@genigualdad.com or message us on WhatsApp.</p>'}}
-catch(e){mc.innerHTML='<p class="error">Something went wrong. Please email us at contacto@genigualdad.com or message us on WhatsApp.</p>'}
-btn.disabled=false;btn.textContent='Send enquiry';setTimeout(function(){mc.innerHTML=''},8000)});}
+if(r.ok){var ok=document.createElement('p');ok.className='success';ok.textContent='Thank you, '+p.nombre+'. We have received your enquiry and will reply to '+p.email+'.';mc.replaceChildren(ok);f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
+else{mc.innerHTML='<p class="error">We couldn\'t send your enquiry. Your message is still in the form: you can try again, email us at contacto@genigualdad.com or message us on WhatsApp.</p>'}}
+catch(e){mc.innerHTML='<p class="error">We couldn\'t send your enquiry. Your message is still in the form: you can try again, email us at contacto@genigualdad.com or message us on WhatsApp.</p>'}
+btn.disabled=false;btn.textContent='Send enquiry';void 0});}
 })();
 </script>
 </body>
