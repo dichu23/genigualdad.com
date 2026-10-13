@@ -105,7 +105,7 @@
     <p style="margin-top:18px"><a class="button primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ236k6_EAuIPUEOZDl-iHwgndZxlDXi5A7C8zSNXzaSD8qEP-YTR8gVNbv-lYl4PysgAy9ep-da" target="_blank" rel="noopener" data-ga="schedule_click">Elegir día y horario en la agenda</a></p>
     <p style="margin-top:18px"><a class="button ghost" href="https://wa.me/353892060080?text=Hola,%20vengo%20de%20la%20web%20de%20Gen%2B%20Igualdad%20(Argentina).%20Quer%C3%ADa%20consultar%20sobre:%20" target="_blank" rel="noopener" data-ga="contact_whatsapp">Escríbenos por WhatsApp</a></p>
     <div class="contact-locations"><div><h4>Argentina</h4><p>Ciudad Autónoma de Buenos Aires</p><p><a href="tel:+5491162296664">+54 911 6229-6664</a></p><p><a href="tel:+5491160595326">+54 911 6059-5326</a></p></div><div><h4>España</h4><p>Santiago de Compostela, Galicia</p><p><a href="tel:+34698187971">+34 698 187 971</a></p></div></div>
-    <div class="contact-email"><p><strong>Email:</strong> <a href="mailto:contacto@genigualdad.com">contacto@genigualdad.com</a></p></div>
+    <div class="contact-email"><p><strong>Email:</strong> <a href="mailto:contacto@genigualdad.com">contacto@genigualdad.com</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/353892060080" target="_blank" rel="noopener" data-ga="contact_whatsapp">+353 89 206 0080</a></p></div>
   </div>
   <form class="contact-form" id="contactForm">
     <div><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
@@ -114,6 +114,7 @@
     <div><label for="pais">País</label><select id="pais" name="pais"><option value="">Seleccionar…</option><option>España</option><option selected>Argentina</option><option>Otro</option></select></div>
     <div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Contanos brevemente qué necesita tu organización" required></textarea></div>
     <div class="hp" aria-hidden="true"><label for="empresa_web">No completar</label><input id="empresa_web" name="empresa_web" type="text" tabindex="-1" autocomplete="off"></div>
+    <p class="form-note">No incluyas nombres ni datos que permitan identificar a personas involucradas en un caso: para una primera orientación no los necesitamos. Tratamos cada consulta con confidencialidad y usamos tus datos solo para responderte. <a href="/privacidad">Política de privacidad</a>.</p>
     <div class="message-container" role="status" aria-live="polite"></div>
     <button type="submit">Enviar consulta</button>
   </form>
@@ -140,6 +141,7 @@
   <div class="footer-bottom">
     <span>© 2026 GEN+ Igualdad · Consultora en Género</span>
     <span>Buenos Aires, Argentina · Santiago de Compostela, España</span>
+    <nav class="footer-legal" aria-label="Información legal"><a href="/privacidad">Política de privacidad</a><a href="/aviso-legal">Aviso legal</a></nav>
   </div>
 </footer><script>
 (function(){
@@ -157,10 +159,10 @@ if(document.getElementById('empresa_web').value){return;}
 var p={nombre:document.getElementById('nombre').value,email:document.getElementById('email').value,telefono:document.getElementById('telefono').value,pais:document.getElementById('pais')?document.getElementById('pais').value:'',mensaje:document.getElementById('mensaje').value};
 var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Enviando…';
 try{var r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
-if(r.ok){mc.innerHTML='<p class="success">Gracias '+p.nombre+'. Te responderemos a la brevedad.</p>';f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
-else{mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a contacto@genigualdad.com.</p>'}}
-catch(e){mc.innerHTML='<p class="error">Hubo un error al enviar el mensaje. Escríbenos por WhatsApp o a contacto@genigualdad.com.</p>'}
-btn.disabled=false;btn.textContent='Enviar consulta';setTimeout(function(){mc.innerHTML=''},8000)});}
+if(r.ok){var ok=document.createElement('p');ok.className='success';ok.textContent='Gracias, '+p.nombre+'. Recibimos tu consulta y te escribiremos a '+p.email+'.';mc.replaceChildren(ok);f.reset();if(window.gtag)gtag('event','generate_lead',{method:'form'});}
+else{mc.innerHTML='<p class="error">No pudimos enviar la consulta. Tu mensaje sigue en el formulario: puedes intentarlo de nuevo o escribirnos a contacto@genigualdad.com o por WhatsApp.</p>'}}
+catch(e){mc.innerHTML='<p class="error">No pudimos enviar la consulta. Tu mensaje sigue en el formulario: puedes intentarlo de nuevo o escribirnos a contacto@genigualdad.com o por WhatsApp.</p>'}
+btn.disabled=false;btn.textContent='Enviar consulta';void 0});}
 })();
 </script>
 </body>

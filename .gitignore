@@ -56,3 +56,4 @@ Thumbs.db
 .cache/
 .temp/
 __pycache__/
+.impeccable/
