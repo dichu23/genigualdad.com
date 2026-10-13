@@ -251,7 +251,7 @@ footer ul{list-style:none;display:grid;gap:10px}
 footer ul a{color:var(--muted);font-size:.9rem}
 footer ul a:hover{color:var(--ink)}
 .footer-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.footer-bottom span{color:#8b8496;font-size:.82rem}
+.footer-bottom span{color:var(--muted);font-size:.82rem}
 
 @media (max-width:1150px){
   .nav,.nav-cta{display:none}
@@ -536,3 +536,9 @@ a.legal-card:hover .legal-ref{text-decoration:underline}
 /* Preguntas frecuentes y subtítulos dentro de artículos: separarlos del párrafo anterior */
 .article-body h3{margin:30px auto 0}
 .article-body h2+h3{margin-top:14px}
+
+/* Contact form notice and messages */
+.form-note{color:var(--muted);font-size:.84rem;line-height:1.6;border-top:1px solid var(--line);padding-top:14px}
+.form-note a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal-dark);text-underline-offset:3px}
+.message-container:empty{min-height:0}
+.message-container p{font-size:.92rem;text-align:left;padding:12px 14px;border-top:2px solid currentColor;background:var(--paper)}
