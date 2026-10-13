@@ -36,9 +36,9 @@
     <a class="lang-switch" href="/en" hreflang="en" lang="en" aria-label="Ver esta p&#225;gina en ingl&#233;s" data-ga="lang_switch_en">EN</a>
     <a class="nav-cta" href="/contacto">Agendar consulta</a>
   </div>
-  <div class="header-mobile"><a class="lang-switch" href="/en" hreflang="en" lang="en" aria-label="Ver esta p&#225;gina en ingl&#233;s" data-ga="lang_switch_en">EN</a><button class="menu-button" type="button" aria-label="Abrir menú"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  <div class="header-mobile"><a class="lang-switch" href="/en" hreflang="en" lang="en" aria-label="Ver esta p&#225;gina en ingl&#233;s" data-ga="lang_switch_en">EN</a><button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
 </header>
-<div class="mobile-menu">
+<div class="mobile-menu" id="menu-movil">
   <button class="close-menu" type="button" aria-label="Cerrar menú"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   <a href="/argentina">Argentina</a><a href="/espana">España</a><a href="/#servicios">Servicios</a><a href="/equipo">Equipo</a><a href="/recursos">Recursos</a><a href="/contacto">Contacto</a>
   <a class="button primary nav-cta" href="/contacto">Agendar consulta</a>
@@ -142,17 +142,6 @@
   </div>
 </section>
 
-<section class="about">
-  <div class="about-image"><img src="/img/territorio-indec.webp" alt="María Rosa Diez de Ulzurrún junto a su equipo en un curso para nivel secundario con el INDEC" width="900" height="632" loading="lazy"></div>
-  <div class="about-copy">
-    <p class="eyebrow">Sobre nosotros</p>
-    <h2>Consultoría especializada en género, igualdad y transformación cultural</h2>
-    <p>En GEN+ brindamos asesoramiento y orientación para fomentar la igualdad de género en empresas y organizaciones. Nuestro equipo identifica barreras, diseña acciones concretas y promueve entornos inclusivos, equitativos y respetuosos.</p>
-    <div class="mission"><h3>Nuestra misión</h3><p>Promover espacios laborales seguros, inclusivos y libres de violencia mediante un abordaje integral con perspectiva de género: identificamos brechas, diseñamos estrategias basadas en evidencia y acompañamos la transformación de las prácticas.</p></div>
-    <div class="mission"><h3>Nuestra visión</h3><p>Ser referentes en la construcción de organizaciones donde la perspectiva de género forme parte de cada decisión, política y práctica.</p></div>
-  </div>
-</section>
-
 <section class="team" id="equipo">
   <div class="section-title"><p class="eyebrow">Nuestro equipo</p><h2>Especialistas con respaldo institucional</h2></div>
   <div class="team-grid">
@@ -185,26 +174,6 @@
     <div class="timeline-item"><div class="timeline-dot">2</div><h3>2015 — 2020</h3><p>Dictamos talleres de alfabetización estadística en universidades y secundarios.</p></div>
     <div class="timeline-item"><div class="timeline-dot">3</div><h3>2020 — 2024</h3><p>Capacitamos en todas las provincias a funcionarios, líderes, ONGs y comunidad.</p></div>
     <div class="timeline-item"><div class="timeline-dot">4</div><h3>2024 +</h3><p>Creamos Gen+ Igualdad: protocolos, planes de igualdad, diagnósticos y prevención de violencia en Argentina y España.</p></div>
-  </div>
-</section>
-
-<section class="impact">
-  <div>
-    <p class="eyebrow">El impacto</p>
-    <h2>Por qué incorporar la agenda de igualdad con especialistas</h2>
-    <p style="margin-top:18px">Trabajar con quienes conocen el marco normativo, el territorio y la metodología reduce el riesgo legal y organizacional, y multiplica el impacto real de cada intervención.</p>
-  </div>
-  <div class="impact-columns">
-    <div><h4>Para las personas</h4><div class="impact-list">
-      <p><strong>Protección</strong><span>Espacio seguro y libre de violencia</span></p>
-      <p><strong>Bienestar</strong><span>Personas valoradas y respetadas</span></p>
-      <p><strong>Crecimiento</strong><span>Oportunidades equitativas</span></p>
-    </div></div>
-    <div><h4>Para la empresa</h4><div class="impact-list">
-      <p><strong>Cumplimiento</strong><span>Menos riesgo legal y reputacional</span></p>
-      <p><strong>Productividad</strong><span>Menos ausentismo, más rendimiento</span></p>
-      <p><strong>Retención</strong><span>Atrae talento y reduce rotación</span></p>
-    </div></div>
   </div>
 </section>
 
@@ -253,7 +222,7 @@
     <p>Coordinamos una reunión inicial sin costo para analizar el punto de partida y diseñar una propuesta clara, viable y adaptada a tu equipo.</p>
     <p style="margin-top:18px"><a class="button primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ236k6_EAuIPUEOZDl-iHwgndZxlDXi5A7C8zSNXzaSD8qEP-YTR8gVNbv-lYl4PysgAy9ep-da" target="_blank" rel="noopener" data-ga="schedule_click">Elegir día y horario en la agenda</a></p>
     <p style="margin-top:18px"><a class="button ghost" href="https://wa.me/353892060080?text=Hola,%20vengo%20de%20la%20web%20de%20Gen%2B%20Igualdad%20(p%C3%A1gina%20principal).%20Quer%C3%ADa%20consultar%20sobre:%20" target="_blank" rel="noopener" data-ga="contact_whatsapp">Escríbenos por WhatsApp</a></p>
-    <div class="contact-locations"><div><h4>Argentina</h4><p>Ciudad Autónoma de Buenos Aires</p><p><a href="tel:+5491162296664">+54 911 6229-6664</a></p><p><a href="tel:+5491160595326">+54 911 6059-5326</a></p></div><div><h4>España</h4><p>Santiago de Compostela, Galicia</p><p><a href="tel:+34698187971">+34 698 187 971</a></p></div></div>
+    <div class="contact-locations"><div><h3>Argentina</h3><p>Ciudad Autónoma de Buenos Aires</p><p><a href="tel:+5491162296664">+54 911 6229-6664</a></p><p><a href="tel:+5491160595326">+54 911 6059-5326</a></p></div><div><h3>España</h3><p>Santiago de Compostela, Galicia</p><p><a href="tel:+34698187971">+34 698 187 971</a></p></div></div>
     <div class="contact-email"><p><strong>Email:</strong> <a href="mailto:contacto@genigualdad.com">contacto@genigualdad.com</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/353892060080" target="_blank" rel="noopener" data-ga="contact_whatsapp">+353 89 206 0080</a></p></div>
   </div>
   <form class="contact-form" id="contactForm">
@@ -275,15 +244,15 @@
       <p>Consultora en género, diversidad e inclusión. Formación, investigación y asesoramiento en Argentina y España.</p>
     </div>
     <div>
-      <h4>Servicios</h4>
+      <h2>Servicios</h2>
       <ul><li><a href="/servicios/protocolos-de-igualdad">Protocolos de igualdad</a></li><li><a href="/servicios/capacitaciones">Capacitaciones</a></li><li><a href="/servicios/diagnosticos-y-planes">Diagnósticos y planes</a></li><li><a href="/servicios/asesoria-juridica">Asesoría jurídica</a></li><li><a href="/servicios/investigacion">Investigación social</a></li></ul>
     </div>
     <div>
-      <h4>Mercados</h4>
+      <h2>Mercados</h2>
       <ul><li><a href="/argentina">Organizaciones en Argentina</a></li><li><a href="/espana">Empresas en España</a></li><li><a href="/equipo">Nuestro equipo</a></li><li><a href="/recursos">Recursos</a></li></ul>
     </div>
     <div>
-      <h4>Contacto</h4>
+      <h2>Contacto</h2>
       <ul><li><a href="mailto:contacto@genigualdad.com">contacto@genigualdad.com</a></li><li><a href="tel:+5491162296664">+54 911 6229-6664</a></li><li><a href="tel:+34698187971">+34 698 187 971</a></li><li><a class="button primary" href="/contacto" style="margin-top:8px">Agendar consulta</a></li></ul>
     </div>
   </div>
@@ -294,8 +263,9 @@
 </footer><script>
 (function(){
 var mb=document.querySelector('.menu-button'),cm=document.querySelector('.close-menu'),mm=document.querySelector('.mobile-menu');
-if(mb){mb.addEventListener('click',function(){mm.classList.add('active')});cm.addEventListener('click',function(){mm.classList.remove('active')});
-document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',function(){mm.classList.remove('active')})});}
+if(mb){var openM=function(){mm.classList.add('active');mb.setAttribute('aria-expanded','true');cm.focus()};var closeM=function(back){mm.classList.remove('active');mb.setAttribute('aria-expanded','false');if(back)mb.focus()};
+mb.addEventListener('click',openM);cm.addEventListener('click',function(){closeM(true)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mm.classList.contains('active'))closeM(true)});
+document.querySelectorAll('.mobile-menu a').forEach(function(l){l.addEventListener('click',function(){closeM(false)})});}
 document.querySelectorAll('[data-ga]').forEach(function(el){el.addEventListener('click',function(){if(window.gtag)gtag('event',el.getAttribute('data-ga'));})});
 var sel='.section-title, .why-grid, .about-copy, .about-image, .team-grid, .pillars, .flagship, .corporate-grid, .timeline, .stats-grid, .impact-columns, .institutions-strip, .gallery, .process-grid, .blog-grid, .contact-form, .contact-copy, .summary-text, .summary-heading, .country-cards, .legal-grid, .faq, .service-cards, .cta-band-inner, .article-body';
 var t=document.querySelectorAll(sel);t.forEach(function(e){e.classList.add('reveal')});
