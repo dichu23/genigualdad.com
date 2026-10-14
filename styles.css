@@ -284,8 +284,9 @@ footer ul a:hover{color:var(--ink)}
   .footer-grid{grid-template-columns:1fr}
 }
 @media (max-width:560px){
-  .site-header{height:88px}
-  .brand img{height:36px}
+  .site-header{height:88px;padding:0 16px;gap:12px}
+  .brand{flex:0 1 auto;min-width:0}
+  .brand img{height:36px;max-width:100%}
   .hero-actions{flex-direction:column}
   .button{width:100%}
   h1{font-size:clamp(2.2rem,5vw,3.2rem)}
@@ -557,3 +558,28 @@ footer ul a{display:inline-block;padding:7px 0}
 
 /* Razones sin iconos: una regla teal corta, el recurso propio de la marca */
 .why-grid article::before{content:"";display:block;width:40px;height:3px;background:var(--teal);margin-bottom:22px}
+
+/* Home: herramientas gratuitas destacadas + guías más leídas */
+.blog-grid.tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+.guides-list{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 40px;align-items:end}
+.guides-list h3{grid-column:1/-1;font-size:1.25rem}
+.guides-list ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.guides-list li a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);font-weight:500}
+.guides-list li a:hover{color:var(--teal-text)}
+.guides-list .icon{width:16px;height:16px;flex:0 0 auto}
+@media (max-width:860px){
+  .blog-grid.tools,.guides-list{grid-template-columns:1fr}
+  .guides-list .button{justify-self:start}
+}
+
+/* Home: organizaciones que trabajaron con nosotros */
+.clients{margin-top:56px}
+.clients h3{font-size:1.25rem}
+.clients-grid{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.clients-grid li{align-items:center;border:1px solid var(--line);display:flex;height:120px;justify-content:center;padding:20px}
+.clients-grid img{filter:grayscale(1);height:auto;max-height:64px;max-width:100%;opacity:.75;transition:filter .3s ease,opacity .3s ease;width:auto}
+.clients-grid li:hover img{filter:none;opacity:1}
+.client-name{color:var(--muted);font-size:.85rem;font-weight:600;line-height:1.35;text-align:center}
+.clients p{margin-top:20px;max-width:760px}
+@media (max-width:1120px){.clients-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.clients-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.clients-grid li{height:104px;padding:16px}}
