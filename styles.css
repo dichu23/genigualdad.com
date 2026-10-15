@@ -575,7 +575,7 @@ footer ul a{display:inline-block;padding:7px 0}
 /* Home: organizaciones que trabajaron con nosotros */
 .clients{margin-top:56px}
 .clients h3{font-size:1.25rem}
-.clients-grid{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;--cols:5}
+.clients-grid{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;--cols:4}
 .clients-grid li{flex:0 0 calc((100% - (var(--cols) - 1) * 12px) / var(--cols));align-items:center;border:1px solid var(--line);display:flex;height:120px;justify-content:center;padding:20px}
 .clients-grid img{filter:grayscale(1);height:auto;max-height:64px;max-width:100%;opacity:.75;transition:filter .3s ease,opacity .3s ease;width:auto}
 .clients-grid li:hover img{filter:none;opacity:1}
