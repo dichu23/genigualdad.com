@@ -575,11 +575,11 @@ footer ul a{display:inline-block;padding:7px 0}
 /* Home: organizaciones que trabajaron con nosotros */
 .clients{margin-top:56px}
 .clients h3{font-size:1.25rem}
-.clients-grid{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
-.clients-grid li{align-items:center;border:1px solid var(--line);display:flex;height:120px;justify-content:center;padding:20px}
+.clients-grid{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;--cols:5}
+.clients-grid li{flex:0 0 calc((100% - (var(--cols) - 1) * 12px) / var(--cols));align-items:center;border:1px solid var(--line);display:flex;height:120px;justify-content:center;padding:20px}
 .clients-grid img{filter:grayscale(1);height:auto;max-height:64px;max-width:100%;opacity:.75;transition:filter .3s ease,opacity .3s ease;width:auto}
 .clients-grid li:hover img{filter:none;opacity:1}
 .client-name{color:var(--muted);font-size:.85rem;font-weight:600;line-height:1.35;text-align:center}
 .clients p{margin-top:20px;max-width:760px}
-@media (max-width:1120px){.clients-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:560px){.clients-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.clients-grid li{height:104px;padding:16px}}
+@media (max-width:1120px){.clients-grid{--cols:3}}
+@media (max-width:560px){.clients-grid{--cols:2}.clients-grid li{height:104px;padding:16px}}
